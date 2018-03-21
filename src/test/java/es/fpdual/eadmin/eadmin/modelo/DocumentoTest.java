@@ -12,6 +12,7 @@ public class DocumentoTest {
 	private static final String NOMBRE = "Ejemplo";
 	private static final boolean PUBLICO = true;
 	private static final Integer CODIGO = 1;
+	private static final Documento EJEMPLO = new Documento(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ACTIVO); 
 	
 //	@Before
 //	public void inicializar() {
@@ -20,18 +21,21 @@ public class DocumentoTest {
 	
 	@Test
 	public void testGetters() {
-		Documento ejemplo = new Documento(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ACTIVO); 
-		assertEquals(CODIGO, ejemplo.getCodigo());
-		assertEquals(NOMBRE, ejemplo.getNombre());
-		assertEquals(FECHA_CREACION, ejemplo.getFechaCreacion());
-		assertEquals(PUBLICO, ejemplo.getPublico());
-		assertEquals(EstadoDocumento.ACTIVO, ejemplo.getEstado());
+		assertEquals(CODIGO, EJEMPLO.getCodigo());
+		assertEquals(NOMBRE, EJEMPLO.getNombre());
+		assertEquals(FECHA_CREACION, EJEMPLO.getFechaCreacion());
+		assertEquals(PUBLICO, EJEMPLO.getPublico());
+		assertEquals(EstadoDocumento.ACTIVO, EJEMPLO.getEstado());
 	}
 	
 	@Test 
 	public void testEquals() {
-		Documento ejemplo = new Documento(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ACTIVO);
 		Documento ejemplo1 = new Documento(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ACTIVO);
-		assertEquals(ejemplo, ejemplo1);
+		assertEquals(EJEMPLO, ejemplo1);
+	}
+	
+	@Test
+	public void testToString() {
+		assertEquals("Documento con código 1", EJEMPLO.toString());
 	}
 }

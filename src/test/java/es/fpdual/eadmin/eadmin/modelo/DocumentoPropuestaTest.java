@@ -23,4 +23,10 @@ public class DocumentoPropuestaTest {
 		assertEquals(EJERCICIO, EJEMPLO.getEjercicio());
 		assertEquals(GRUPO_POLITICO, EJEMPLO.getGrupoPolitico());
 	}
+	
+	@Test 
+	public void testEquals() {
+		DocumentoPropuesta ejemplo1 = new DocumentoPropuesta(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ACTIVO, CODIGO_PROPUESTA, EJERCICIO, GRUPO_POLITICO);
+		assertEquals(EJEMPLO, ejemplo1);
+	}
 }
