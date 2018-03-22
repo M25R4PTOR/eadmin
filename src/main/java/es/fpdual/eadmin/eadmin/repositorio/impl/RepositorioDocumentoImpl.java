@@ -3,6 +3,7 @@ package es.fpdual.eadmin.eadmin.repositorio.impl;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 
 import org.springframework.stereotype.Repository;
 
@@ -14,6 +15,10 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 
 	private List<Documento> documentos = new ArrayList<>();
 	
+	public List<Documento> getDocumentos() {
+		return documentos;
+	}
+
 	@Override
 	public void altaDocumento(Documento documento) {
 		if (documentos.contains(documento)) {
@@ -33,16 +38,24 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 
 	@Override
 	public void eliminarDocumento(Integer codigo) {
-		Documento documentoEncontrado = null;
-		for(int i = 0; i < documentos.size(); i++) {
-			if(documentos.get(i).getCodigo().equals(codigo)) {
-				documentoEncontrado = documentos.get(i);
-				break;
-			}
+//		Documento documentoEncontrado = null;
+//		for(int i = 0; i < documentos.size(); i++) {
+//			if(documentos.get(i).getCodigo().equals(codigo)) {
+//				documentoEncontrado = documentos.get(i);
+//				break;
+//			}
+//		}
+		Optional<Documento> documentoEncontrado = documentos.stream().filter(d -> tieneIgualCodigo(d, codigo)).findFirst();
+//		if (Objects.nonNull(documentoEncontrado)) {    // lo mismo -->  (documentoEncontrado != null) 
+//			documentos.remove(documentoEncontrado);
+//		}
+		if(documentoEncontrado.isPresent()) {
+			documentos.remove(documentoEncontrado.get());
 		}
-		if (Objects.nonNull(documentoEncontrado)) {    // lo mismo -->  (documentoEncontrado != null) 
-			documentos.remove(documentoEncontrado);
-		}
+	}
+	
+	protected boolean tieneIgualCodigo(Documento documento, Integer codigo) {
+		return documento.getCodigo().equals(codigo);
 	}
 
 }
