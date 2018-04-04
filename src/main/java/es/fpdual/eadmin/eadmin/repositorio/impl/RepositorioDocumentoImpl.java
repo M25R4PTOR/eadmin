@@ -25,6 +25,7 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 		}
 
 		documentos.add(documento);
+		System.out.println("Documento añadido");
 	}
 
 	@Override
