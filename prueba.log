@@ -1,58 +1,835 @@
-2018-04-04 14:26:34.439  INFO 2168 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 2168 (C:\Users\formacion\Desktop\Java\eadmin-master\target\classes started by formacion in C:\Users\formacion\Desktop\Java\eadmin-master)
-2018-04-04 14:26:34.439  INFO 2168 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
-2018-04-04 14:26:34.486  INFO 2168 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b2cf7ab: startup date [Wed Apr 04 14:26:34 CEST 2018]; root of context hierarchy
-2018-04-04 14:26:35.614  INFO 2168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-04-04 14:26:35.642  INFO 2168 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-04-04 14:26:35.643  INFO 2168 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
-2018-04-04 14:26:35.652  INFO 2168 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
-2018-04-04 14:26:35.761  INFO 2168 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-04-04 14:26:35.761  INFO 2168 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1275 ms
-2018-04-04 14:26:35.902  INFO 2168 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-04-04 14:26:35.917  INFO 2168 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-04-04 14:26:35.917  INFO 2168 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-04-04 14:26:35.917  INFO 2168 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-04-04 14:26:35.917  INFO 2168 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-04-04 14:26:36.214  INFO 2168 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b2cf7ab: startup date [Wed Apr 04 14:26:34 CEST 2018]; root of context hierarchy
-2018-04-04 14:26:36.293  INFO 2168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumento(java.lang.Integer)
-2018-04-04 14:26:36.293  INFO 2168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumento(java.lang.Integer)
-2018-04-04 14:26:36.293  INFO 2168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
-2018-04-04 14:26:36.293  INFO 2168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-04-04 14:26:36.293  INFO 2168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-04-04 14:26:36.325  INFO 2168 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-04-04 14:26:36.325  INFO 2168 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-04-04 14:26:36.388  INFO 2168 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-04-04 14:26:36.559  INFO 2168 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2018-04-04 14:26:36.590  INFO 2168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-04-04 14:26:36.590  INFO 2168 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 2.493 seconds (JVM running for 2.888)
-2018-04-04 14:26:36.590  INFO 2168 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
-2018-04-04 14:26:36.590  INFO 2168 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
-2018-04-04 14:26:36.590  INFO 2168 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
-2018-04-04 14:26:36.590  INFO 2168 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
-2018-04-04 14:26:36.590  INFO 2168 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
-2018-04-04 14:26:36.590  INFO 2168 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
-2018-04-04 14:26:36.590  INFO 2168 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
-2018-04-04 14:26:36.590  INFO 2168 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
-2018-04-04 14:26:36.590  INFO 2168 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
-2018-04-04 14:26:36.590  INFO 2168 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
-2018-04-04 14:26:36.590  INFO 2168 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 4 creado correctamente.
-2018-04-04 14:26:36.590  INFO 2168 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
-2018-04-04 14:26:36.590  INFO 2168 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
-2018-04-04 14:27:26.544  INFO 2168 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-04-04 14:27:26.545  INFO 2168 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
-2018-04-04 14:27:26.555  INFO 2168 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
-2018-04-04 14:27:26.668  INFO 2168 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
-2018-04-04 14:27:26.683  INFO 2168 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
-2018-04-04 14:27:26.683  INFO 2168 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "eliminarDocumento"
-2018-04-04 14:27:39.615  INFO 2168 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
-2018-04-04 14:27:39.616  INFO 2168 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
-2018-04-04 14:27:39.617  INFO 2168 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "eliminarDocumento"
-2018-04-04 14:28:34.087  WARN 2168 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
-2018-04-04 14:28:43.341  WARN 2168 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
-2018-04-04 14:28:51.333  INFO 2168 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
-2018-04-04 14:28:51.335  INFO 2168 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo2, Fecha Creación: Wed Apr 04 14:26:35 CEST 2018, Público: false y Estado Documento: APROBADO
-2018-04-04 14:28:51.335  INFO 2168 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Wed Apr 04 14:26:35 CEST 2018, Público: true y Estado Documento: ELIMINADO
-2018-04-04 14:28:51.335  INFO 2168 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
-2018-04-04 14:29:01.595  INFO 2168 --- [http-nio-8080-exec-6] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerDocumentoPorCodigo"
-2018-04-04 14:29:01.597  INFO 2168 --- [http-nio-8080-exec-6] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerDocumentoPorCodigo" devolviendo un documento
-2018-04-04 14:30:40.929  INFO 2168 --- [http-nio-8080-exec-8] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerDocumentoPorCodigo"
-2018-04-04 14:30:40.930  INFO 2168 --- [http-nio-8080-exec-8] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerDocumentoPorCodigo" sin devolver nada
+2018-04-05 09:04:21.921  INFO 10424 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 10424 (C:\Users\formacion\Desktop\Java\eadmin-master\target\classes started by formacion in C:\Users\formacion\Desktop\Java\eadmin-master)
+2018-04-05 09:04:21.936  INFO 10424 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-05 09:04:22.052  INFO 10424 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a079870: startup date [Thu Apr 05 09:04:22 CEST 2018]; root of context hierarchy
+2018-04-05 09:04:24.407  INFO 10424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-05 09:04:24.472  INFO 10424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-05 09:04:24.473  INFO 10424 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-05 09:04:24.517  INFO 10424 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-05 09:04:24.723  INFO 10424 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-05 09:04:24.724  INFO 10424 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2672 ms
+2018-04-05 09:04:24.891  INFO 10424 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-05 09:04:24.897  INFO 10424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-05 09:04:24.898  INFO 10424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-05 09:04:24.898  INFO 10424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-05 09:04:24.900  INFO 10424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-05 09:04:25.327  INFO 10424 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a079870: startup date [Thu Apr 05 09:04:22 CEST 2018]; root of context hierarchy
+2018-04-05 09:04:25.435  INFO 10424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumento(java.lang.Integer)
+2018-04-05 09:04:25.437  INFO 10424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-05 09:04:25.438  INFO 10424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumento(java.lang.Integer)
+2018-04-05 09:04:25.448  INFO 10424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-05 09:04:25.450  INFO 10424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 09:04:25.502  INFO 10424 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 09:04:25.502  INFO 10424 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 09:04:25.574  INFO 10424 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 09:04:25.921  INFO 10424 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-05 09:04:25.964  INFO 10424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-05 09:04:25.968  INFO 10424 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 4.719 seconds (JVM running for 5.251)
+2018-04-05 09:04:25.973  INFO 10424 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 09:04:25.973  INFO 10424 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-05 09:04:25.973  INFO 10424 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 09:04:25.973  INFO 10424 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 09:04:25.973  INFO 10424 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-05 09:04:25.974  INFO 10424 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 09:04:25.974  INFO 10424 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 09:04:25.974  INFO 10424 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-05 09:04:25.974  INFO 10424 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 09:04:25.974  INFO 10424 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 09:04:25.974  INFO 10424 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 4 creado correctamente.
+2018-04-05 09:04:25.974  INFO 10424 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 09:04:25.974  INFO 10424 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
+2018-04-05 12:56:37.259  INFO 5376 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 5376 (C:\Users\formacion\Desktop\Java\eadmin-master\target\classes started by formacion in C:\Users\formacion\Desktop\Java\eadmin-master)
+2018-04-05 12:56:37.259  INFO 5376 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-05 12:56:37.327  INFO 5376 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6295d394: startup date [Thu Apr 05 12:56:37 CEST 2018]; root of context hierarchy
+2018-04-05 12:56:38.576  INFO 5376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-05 12:56:38.601  INFO 5376 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-05 12:56:38.601  INFO 5376 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-05 12:56:38.616  INFO 5376 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-05 12:56:38.761  INFO 5376 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-05 12:56:38.761  INFO 5376 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1434 ms
+2018-04-05 12:56:38.893  INFO 5376 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-05 12:56:38.893  INFO 5376 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-05 12:56:38.893  INFO 5376 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-05 12:56:38.893  INFO 5376 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-05 12:56:38.893  INFO 5376 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-05 12:56:39.224  INFO 5376 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6295d394: startup date [Thu Apr 05 12:56:37 CEST 2018]; root of context hierarchy
+2018-04-05 12:56:39.325  INFO 5376 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumento(java.lang.Integer)
+2018-04-05 12:56:39.325  INFO 5376 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-05 12:56:39.325  INFO 5376 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumento(java.lang.Integer)
+2018-04-05 12:56:39.325  INFO 5376 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-05 12:56:39.325  INFO 5376 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 12:56:39.378  INFO 5376 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 12:56:39.378  INFO 5376 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 12:56:39.447  INFO 5376 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 12:56:39.625  INFO 5376 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-05 12:56:39.663  INFO 5376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 2.851 seconds (JVM running for 3.298)
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 4 creado correctamente.
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 12:56:38 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo2, Fecha Creación: Thu Apr 05 12:56:38 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 12:56:38 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo4, Fecha Creación: Thu Apr 05 12:56:38 CEST 2018, Público: false y Estado Documento: ELIMINADO
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 12:56:39.678  INFO 5376 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
+2018-04-05 12:58:26.577  INFO 10252 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 10252 (C:\Users\formacion\Desktop\Java\eadmin-master\target\classes started by formacion in C:\Users\formacion\Desktop\Java\eadmin-master)
+2018-04-05 12:58:26.577  INFO 10252 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-05 12:58:26.615  INFO 10252 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48524010: startup date [Thu Apr 05 12:58:26 CEST 2018]; root of context hierarchy
+2018-04-05 12:58:27.864  INFO 10252 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-05 12:58:27.912  INFO 10252 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-05 12:58:27.913  INFO 10252 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-05 12:58:27.924  INFO 10252 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-05 12:58:28.057  INFO 10252 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-05 12:58:28.057  INFO 10252 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1442 ms
+2018-04-05 12:58:28.207  INFO 10252 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-05 12:58:28.219  INFO 10252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-05 12:58:28.219  INFO 10252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-05 12:58:28.220  INFO 10252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-05 12:58:28.220  INFO 10252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-05 12:58:28.778  INFO 10252 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48524010: startup date [Thu Apr 05 12:58:26 CEST 2018]; root of context hierarchy
+2018-04-05 12:58:28.920  INFO 10252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-05 12:58:28.924  INFO 10252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumento(java.lang.Integer)
+2018-04-05 12:58:28.925  INFO 10252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumento(java.lang.Integer)
+2018-04-05 12:58:28.939  INFO 10252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-05 12:58:28.943  INFO 10252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 12:58:29.002  INFO 10252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 12:58:29.002  INFO 10252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 12:58:29.044  INFO 10252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 12:58:29.209  INFO 10252 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-05 12:58:29.248  INFO 10252 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-05 12:58:29.251  INFO 10252 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 3.035 seconds (JVM running for 3.466)
+2018-04-05 12:58:29.255  INFO 10252 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 12:58:29.256  INFO 10252 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-05 12:58:29.256  INFO 10252 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 12:58:29.256  INFO 10252 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 12:58:29.256  INFO 10252 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-05 12:58:29.257  INFO 10252 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 12:58:29.257  INFO 10252 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 12:58:29.257  INFO 10252 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-05 12:58:29.257  INFO 10252 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 12:58:29.257  INFO 10252 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 12:58:29.258  INFO 10252 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 4 creado correctamente.
+2018-04-05 12:58:29.258  INFO 10252 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 12:58:29.258  INFO 10252 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 12:58:29.258  INFO 10252 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 12:58:28 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 12:58:29.258  INFO 10252 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo2, Fecha Creación: Thu Apr 05 12:58:28 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 12:58:29.258  INFO 10252 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 12:58:28 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 12:58:29.258  INFO 10252 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo4, Fecha Creación: Thu Apr 05 12:58:28 CEST 2018, Público: false y Estado Documento: ELIMINADO
+2018-04-05 12:58:29.259  INFO 10252 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 12:58:29.261  INFO 10252 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
+2018-04-05 13:00:20.520  INFO 1968 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 1968 (C:\Users\formacion\Desktop\Java\eadmin-master\target\classes started by formacion in C:\Users\formacion\Desktop\Java\eadmin-master)
+2018-04-05 13:00:20.520  INFO 1968 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-05 13:00:20.567  INFO 1968 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@15761df8: startup date [Thu Apr 05 13:00:20 CEST 2018]; root of context hierarchy
+2018-04-05 13:00:21.821  INFO 1968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-05 13:00:21.853  INFO 1968 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-05 13:00:21.853  INFO 1968 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-05 13:00:21.866  INFO 1968 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-05 13:00:22.001  INFO 1968 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-05 13:00:22.001  INFO 1968 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1434 ms
+2018-04-05 13:00:22.169  INFO 1968 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-05 13:00:22.169  INFO 1968 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-05 13:00:22.169  INFO 1968 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-05 13:00:22.169  INFO 1968 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-05 13:00:22.169  INFO 1968 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-05 13:00:22.471  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@15761df8: startup date [Thu Apr 05 13:00:20 CEST 2018]; root of context hierarchy
+2018-04-05 13:00:22.549  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-05 13:00:22.565  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumento(java.lang.Integer)
+2018-04-05 13:00:22.566  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumento(java.lang.Integer)
+2018-04-05 13:00:22.571  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-05 13:00:22.571  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 13:00:22.618  INFO 1968 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:00:22.618  INFO 1968 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:00:22.665  INFO 1968 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:00:22.834  INFO 1968 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-05 13:00:22.888  INFO 1968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 2.721 seconds (JVM running for 3.155)
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 4 creado correctamente.
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 13:00:22 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo2, Fecha Creación: Thu Apr 05 13:00:22 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 13:00:22 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo4, Fecha Creación: Thu Apr 05 13:00:22 CEST 2018, Público: false y Estado Documento: ELIMINADO
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 13:00:22.903  INFO 1968 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
+2018-04-05 13:01:52.914  INFO 6848 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 6848 (C:\Users\formacion\Desktop\Java\eadmin-master\target\classes started by formacion in C:\Users\formacion\Desktop\Java\eadmin-master)
+2018-04-05 13:01:52.914  INFO 6848 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-05 13:01:52.978  INFO 6848 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5db45159: startup date [Thu Apr 05 13:01:52 CEST 2018]; root of context hierarchy
+2018-04-05 13:01:54.261  INFO 6848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-05 13:01:54.288  INFO 6848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-05 13:01:54.289  INFO 6848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-05 13:01:54.291  INFO 6848 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-05 13:01:54.407  INFO 6848 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-05 13:01:54.407  INFO 6848 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1429 ms
+2018-04-05 13:01:54.569  INFO 6848 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-05 13:01:54.569  INFO 6848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-05 13:01:54.569  INFO 6848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-05 13:01:54.569  INFO 6848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-05 13:01:54.569  INFO 6848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-05 13:01:55.039  INFO 6848 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5db45159: startup date [Thu Apr 05 13:01:52 CEST 2018]; root of context hierarchy
+2018-04-05 13:01:55.243  INFO 6848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumento(java.lang.Integer)
+2018-04-05 13:01:55.248  INFO 6848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-05 13:01:55.250  INFO 6848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumento(java.lang.Integer)
+2018-04-05 13:01:55.255  INFO 6848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-05 13:01:55.256  INFO 6848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 13:01:55.295  INFO 6848 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:01:55.300  INFO 6848 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:01:55.383  INFO 6848 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:01:55.624  INFO 6848 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-05 13:01:55.667  INFO 6848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-05 13:01:55.671  INFO 6848 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 3.11 seconds (JVM running for 3.535)
+2018-04-05 13:01:55.675  INFO 6848 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:01:55.676  INFO 6848 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-05 13:01:55.677  INFO 6848 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:01:55.677  INFO 6848 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:01:55.677  INFO 6848 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-05 13:01:55.677  INFO 6848 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:01:55.677  INFO 6848 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:01:55.677  INFO 6848 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-05 13:01:55.677  INFO 6848 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:01:55.677  INFO 6848 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:01:55.677  INFO 6848 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 4 creado correctamente.
+2018-04-05 13:01:55.677  INFO 6848 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:01:55.678  INFO 6848 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 13:01:55.678  INFO 6848 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 13:01:54 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 13:01:55.678  INFO 6848 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo2, Fecha Creación: Thu Apr 05 13:01:54 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 13:01:55.678  INFO 6848 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 13:01:54 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 13:01:55.678  INFO 6848 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo4, Fecha Creación: Thu Apr 05 13:01:54 CEST 2018, Público: false y Estado Documento: ELIMINADO
+2018-04-05 13:01:55.678  INFO 6848 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 13:01:55.680  INFO 6848 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
+2018-04-05 13:12:39.179  INFO 4544 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 4544 (C:\Users\formacion\Desktop\Java\eadmin-master\target\classes started by formacion in C:\Users\formacion\Desktop\Java\eadmin-master)
+2018-04-05 13:12:39.179  INFO 4544 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-05 13:12:39.225  INFO 4544 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@657c8ad9: startup date [Thu Apr 05 13:12:39 CEST 2018]; root of context hierarchy
+2018-04-05 13:12:40.450  INFO 4544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-05 13:12:40.470  INFO 4544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-05 13:12:40.470  INFO 4544 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-05 13:12:40.486  INFO 4544 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-05 13:12:40.597  INFO 4544 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-05 13:12:40.597  INFO 4544 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1372 ms
+2018-04-05 13:12:40.750  INFO 4544 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-05 13:12:40.750  INFO 4544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-05 13:12:40.750  INFO 4544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-05 13:12:40.750  INFO 4544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-05 13:12:40.750  INFO 4544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-05 13:12:41.079  INFO 4544 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@657c8ad9: startup date [Thu Apr 05 13:12:39 CEST 2018]; root of context hierarchy
+2018-04-05 13:12:41.144  INFO 4544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-05 13:12:41.144  INFO 4544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumento(java.lang.Integer)
+2018-04-05 13:12:41.144  INFO 4544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumento(java.lang.Integer)
+2018-04-05 13:12:41.160  INFO 4544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-05 13:12:41.160  INFO 4544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 13:12:41.198  INFO 4544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:12:41.198  INFO 4544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:12:41.244  INFO 4544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:12:41.434  INFO 4544 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-05 13:12:41.483  INFO 4544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-05 13:12:41.487  INFO 4544 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 2.662 seconds (JVM running for 3.079)
+2018-04-05 13:12:41.490  INFO 4544 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:12:41.490  INFO 4544 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-05 13:12:41.490  INFO 4544 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:12:41.490  INFO 4544 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:12:41.490  INFO 4544 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-05 13:12:41.491  INFO 4544 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:12:41.491  INFO 4544 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:12:41.491  INFO 4544 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-05 13:12:41.491  INFO 4544 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:12:41.491  INFO 4544 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:12:41.491  INFO 4544 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 4 creado correctamente.
+2018-04-05 13:12:41.491  INFO 4544 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:12:41.491  INFO 4544 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 13:12:41.491  INFO 4544 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 13:12:40 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 13:12:41.491  INFO 4544 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo2, Fecha Creación: Thu Apr 05 13:12:40 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 13:12:41.491  INFO 4544 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 13:12:40 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 13:12:41.492  INFO 4544 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo4, Fecha Creación: Thu Apr 05 13:12:40 CEST 2018, Público: false y Estado Documento: ELIMINADO
+2018-04-05 13:12:41.492  INFO 4544 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 13:12:41.493  INFO 4544 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
+2018-04-05 13:20:14.383  INFO 112 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 112 (C:\Users\formacion\Desktop\Java\eadmin-master\target\classes started by formacion in C:\Users\formacion\Desktop\Java\eadmin-master)
+2018-04-05 13:20:14.383  INFO 112 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-05 13:20:14.446  INFO 112 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6b419da: startup date [Thu Apr 05 13:20:14 CEST 2018]; root of context hierarchy
+2018-04-05 13:20:15.712  INFO 112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-05 13:20:15.737  INFO 112 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-05 13:20:15.737  INFO 112 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-05 13:20:15.752  INFO 112 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-05 13:20:15.896  INFO 112 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-05 13:20:15.896  INFO 112 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1450 ms
+2018-04-05 13:20:16.043  INFO 112 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-05 13:20:16.043  INFO 112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-05 13:20:16.043  INFO 112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-05 13:20:16.043  INFO 112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-05 13:20:16.043  INFO 112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-05 13:20:16.382  INFO 112 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6b419da: startup date [Thu Apr 05 13:20:14 CEST 2018]; root of context hierarchy
+2018-04-05 13:20:16.460  INFO 112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumento(java.lang.Integer)
+2018-04-05 13:20:16.460  INFO 112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumento(java.lang.Integer)
+2018-04-05 13:20:16.460  INFO 112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-05 13:20:16.475  INFO 112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-05 13:20:16.476  INFO 112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 13:20:16.513  INFO 112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:20:16.513  INFO 112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:20:16.581  INFO 112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:20:16.744  INFO 112 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-05 13:20:16.782  INFO 112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 2.8 seconds (JVM running for 3.492)
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 4 creado correctamente.
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 13:20:16 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo2, Fecha Creación: Thu Apr 05 13:20:16 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 13:20:16 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo4, Fecha Creación: Thu Apr 05 13:20:16 CEST 2018, Público: false y Estado Documento: ELIMINADO
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 13:20:16.782  INFO 112 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
+2018-04-05 13:48:34.048  INFO 9180 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 9180 (C:\Users\formacion\Desktop\Java\eadmin-master\target\classes started by formacion in C:\Users\formacion\Desktop\Java\eadmin-master)
+2018-04-05 13:48:34.048  INFO 9180 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-05 13:48:34.117  INFO 9180 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@37e547da: startup date [Thu Apr 05 13:48:34 CEST 2018]; root of context hierarchy
+2018-04-05 13:48:35.342  INFO 9180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-05 13:48:35.364  INFO 9180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-05 13:48:35.364  INFO 9180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-05 13:48:35.380  INFO 9180 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-05 13:48:35.489  INFO 9180 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-05 13:48:35.489  INFO 9180 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1372 ms
+2018-04-05 13:48:35.642  INFO 9180 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-05 13:48:35.642  INFO 9180 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-05 13:48:35.642  INFO 9180 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-05 13:48:35.642  INFO 9180 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-05 13:48:35.642  INFO 9180 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-05 13:48:35.959  INFO 9180 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@37e547da: startup date [Thu Apr 05 13:48:34 CEST 2018]; root of context hierarchy
+2018-04-05 13:48:36.028  INFO 9180 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumento(java.lang.Integer)
+2018-04-05 13:48:36.044  INFO 9180 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-05 13:48:36.044  INFO 9180 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumento(java.lang.Integer)
+2018-04-05 13:48:36.044  INFO 9180 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-05 13:48:36.044  INFO 9180 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 13:48:36.075  INFO 9180 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:48:36.075  INFO 9180 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:48:36.128  INFO 9180 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:48:36.310  INFO 9180 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-05 13:48:36.357  INFO 9180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-05 13:48:36.360  INFO 9180 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 2.675 seconds (JVM running for 3.087)
+2018-04-05 13:48:36.364  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:48:36.365  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-05 13:48:36.365  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:48:36.365  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:48:36.365  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-05 13:48:36.365  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:48:36.365  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:48:36.366  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-05 13:48:36.366  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:48:36.366  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:48:36.366  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 4 creado correctamente.
+2018-04-05 13:48:36.366  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:48:36.366  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:48:36.366  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 5 creado correctamente.
+2018-04-05 13:48:36.366  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:48:36.367  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 13:48:36.367  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 13:48:35 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 13:48:36.367  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo2, Fecha Creación: Thu Apr 05 13:48:35 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 13:48:36.367  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 13:48:35 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 13:48:36.367  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo4, Fecha Creación: Thu Apr 05 13:48:35 CEST 2018, Público: false y Estado Documento: ELIMINADO
+2018-04-05 13:48:36.368  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 13:48:35 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 13:48:36.368  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 13:48:35 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 13:48:35 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 13:48:35 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 13:48:35 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 13:48:35 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 13:48:35 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 13:48:35 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 13:48:36.369  INFO 9180 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
+2018-04-05 13:56:06.691  INFO 4584 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 4584 (C:\Users\formacion\Desktop\Java\eadmin-master\target\classes started by formacion in C:\Users\formacion\Desktop\Java\eadmin-master)
+2018-04-05 13:56:06.691  INFO 4584 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-05 13:56:06.737  INFO 4584 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a079870: startup date [Thu Apr 05 13:56:06 CEST 2018]; root of context hierarchy
+2018-04-05 13:56:07.985  INFO 4584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-05 13:56:08.003  INFO 4584 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-05 13:56:08.003  INFO 4584 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-05 13:56:08.022  INFO 4584 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-05 13:56:08.122  INFO 4584 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-05 13:56:08.122  INFO 4584 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1385 ms
+2018-04-05 13:56:08.269  INFO 4584 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-05 13:56:08.269  INFO 4584 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-05 13:56:08.269  INFO 4584 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-05 13:56:08.269  INFO 4584 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-05 13:56:08.269  INFO 4584 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-05 13:56:08.586  INFO 4584 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a079870: startup date [Thu Apr 05 13:56:06 CEST 2018]; root of context hierarchy
+2018-04-05 13:56:08.671  INFO 4584 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumento(java.lang.Integer)
+2018-04-05 13:56:08.671  INFO 4584 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-05 13:56:08.671  INFO 4584 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumento(java.lang.Integer)
+2018-04-05 13:56:08.686  INFO 4584 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-05 13:56:08.686  INFO 4584 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 13:56:08.724  INFO 4584 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:56:08.724  INFO 4584 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:56:08.771  INFO 4584 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:56:08.933  INFO 4584 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-05 13:56:08.981  INFO 4584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-05 13:56:08.985  INFO 4584 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 2.631 seconds (JVM running for 3.066)
+2018-04-05 13:56:08.989  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:56:08.989  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-05 13:56:08.989  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:56:08.990  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:56:08.990  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-05 13:56:08.990  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:56:08.990  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:56:08.990  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-05 13:56:08.990  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:56:08.990  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:56:08.991  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 4 creado correctamente.
+2018-04-05 13:56:08.991  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:56:08.991  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:56:08.991  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 5 creado correctamente.
+2018-04-05 13:56:08.991  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:56:08.992  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 13:56:08.992  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 13:56:08 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 13:56:08.992  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo2, Fecha Creación: Thu Apr 05 13:56:08 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 13:56:08.992  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 13:56:08 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 13:56:08.992  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo4, Fecha Creación: Thu Apr 05 13:56:08 CEST 2018, Público: false y Estado Documento: ELIMINADO
+2018-04-05 13:56:08.992  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 13:56:08 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 13:56:08.992  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 13:56:08.994  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
+2018-04-05 13:56:08.994  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
+2018-04-05 13:56:08.994  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
+2018-04-05 13:56:08.994  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
+2018-04-05 13:56:08.994  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 13:56:08.994  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 13:56:08 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 13:56:08.994  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 13:56:08 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 13:56:08.995  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 13:56:08 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 13:56:08.995  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 13:56:08 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 13:56:08.995  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 13:56:08 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 13:56:08.995  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 13:56:08.996  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-05 13:56:08.997  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-05 13:56:08.997  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-05 13:56:08.998  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-05 13:56:08.998  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-05 13:56:08.998  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-05 13:56:08.998  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 13:56:08.998  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 13:56:08 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 13:56:08.998  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 13:56:08 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 13:56:08.998  INFO 4584 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 13:56:09.000  INFO 4584 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
+2018-04-05 13:59:29.402  INFO 7944 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 7944 (C:\Users\formacion\Desktop\Java\eadmin-master\target\classes started by formacion in C:\Users\formacion\Desktop\Java\eadmin-master)
+2018-04-05 13:59:29.417  INFO 7944 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-05 13:59:29.456  INFO 7944 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@657c8ad9: startup date [Thu Apr 05 13:59:29 CEST 2018]; root of context hierarchy
+2018-04-05 13:59:30.703  INFO 7944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-05 13:59:30.734  INFO 7944 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-05 13:59:30.735  INFO 7944 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-05 13:59:30.746  INFO 7944 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-05 13:59:30.876  INFO 7944 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-05 13:59:30.877  INFO 7944 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1421 ms
+2018-04-05 13:59:31.020  INFO 7944 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-05 13:59:31.035  INFO 7944 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-05 13:59:31.036  INFO 7944 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-05 13:59:31.036  INFO 7944 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-05 13:59:31.037  INFO 7944 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-05 13:59:31.350  INFO 7944 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@657c8ad9: startup date [Thu Apr 05 13:59:29 CEST 2018]; root of context hierarchy
+2018-04-05 13:59:31.458  INFO 7944 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumento(java.lang.Integer)
+2018-04-05 13:59:31.459  INFO 7944 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumento(java.lang.Integer)
+2018-04-05 13:59:31.460  INFO 7944 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-05 13:59:31.464  INFO 7944 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-05 13:59:31.465  INFO 7944 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 13:59:31.505  INFO 7944 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:59:31.506  INFO 7944 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:59:31.558  INFO 7944 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 13:59:31.767  INFO 7944 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-05 13:59:31.792  INFO 7944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 2.752 seconds (JVM running for 3.182)
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 4 creado correctamente.
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 5 creado correctamente.
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 13:59:31 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo2, Fecha Creación: Thu Apr 05 13:59:31 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 13:59:31 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo4, Fecha Creación: Thu Apr 05 13:59:31 CEST 2018, Público: false y Estado Documento: ELIMINADO
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 13:59:31 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 13:59:31 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 13:59:31 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 13:59:31 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 13:59:31 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 13:59:31 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 13:59:31 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 13:59:31 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 13:59:31.807  INFO 7944 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
+2018-04-05 14:02:19.511  INFO 6828 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 6828 (C:\Users\formacion\Desktop\Java\eadmin-master\target\classes started by formacion in C:\Users\formacion\Desktop\Java\eadmin-master)
+2018-04-05 14:02:19.511  INFO 6828 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-05 14:02:19.573  INFO 6828 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3e3047e6: startup date [Thu Apr 05 14:02:19 CEST 2018]; root of context hierarchy
+2018-04-05 14:02:20.839  INFO 6828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-05 14:02:20.859  INFO 6828 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-05 14:02:20.859  INFO 6828 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-05 14:02:20.875  INFO 6828 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-05 14:02:21.006  INFO 6828 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-05 14:02:21.007  INFO 6828 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1433 ms
+2018-04-05 14:02:21.137  INFO 6828 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-05 14:02:21.137  INFO 6828 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-05 14:02:21.137  INFO 6828 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-05 14:02:21.137  INFO 6828 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-05 14:02:21.137  INFO 6828 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-05 14:02:21.485  INFO 6828 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3e3047e6: startup date [Thu Apr 05 14:02:19 CEST 2018]; root of context hierarchy
+2018-04-05 14:02:21.570  INFO 6828 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumento(java.lang.Integer)
+2018-04-05 14:02:21.586  INFO 6828 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-05 14:02:21.586  INFO 6828 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumento(java.lang.Integer)
+2018-04-05 14:02:21.586  INFO 6828 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-05 14:02:21.586  INFO 6828 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 14:02:21.654  INFO 6828 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:02:21.654  INFO 6828 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:02:21.685  INFO 6828 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:02:21.855  INFO 6828 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-05 14:02:21.890  INFO 6828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-05 14:02:21.890  INFO 6828 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 2.718 seconds (JVM running for 3.151)
+2018-04-05 14:02:21.890  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:02:21.890  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-05 14:02:21.890  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:02:21.890  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:02:21.890  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-05 14:02:21.890  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:02:21.890  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:02:21.890  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-05 14:02:21.890  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:02:21.890  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 4 creado correctamente.
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 5 creado correctamente.
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 14:02:21 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo2, Fecha Creación: Thu Apr 05 14:02:21 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 14:02:21 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo4, Fecha Creación: Thu Apr 05 14:02:21 CEST 2018, Público: false y Estado Documento: ELIMINADO
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 14:02:21 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 14:02:21 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 14:02:21 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 14:02:21 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 14:02:21 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 14:02:21 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 14:02:21.906  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-05 14:02:21.922  INFO 6828 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-05 14:02:21.923  INFO 6828 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-04-05 14:02:21.923 ERROR 6828 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:771) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at es.fpdual.eadmin.eadmin.EadminApplication.main(EadminApplication.java:29) [classes/:na]
+Caused by: java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Unknown Source) ~[na:1.8.0_152]
+	at es.fpdual.eadmin.eadmin.repositorio.impl.RepositorioDocumentoImpl.eliminarDocumento2(RepositorioDocumentoImpl.java:86) ~[classes/:na]
+	at es.fpdual.eadmin.eadmin.CargarDatosIniciales.run(CargarDatosIniciales.java:38) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:781) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	... 5 common frames omitted
+
+2018-04-05 14:02:21.923  INFO 6828 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3e3047e6: startup date [Thu Apr 05 14:02:19 CEST 2018]; root of context hierarchy
+2018-04-05 14:02:21.923  INFO 6828 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-04-05 14:07:25.743  INFO 8248 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 8248 (C:\Users\formacion\Desktop\Java\eadmin-master\target\classes started by formacion in C:\Users\formacion\Desktop\Java\eadmin-master)
+2018-04-05 14:07:25.743  INFO 8248 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-05 14:07:25.790  INFO 8248 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2aa5fe93: startup date [Thu Apr 05 14:07:25 CEST 2018]; root of context hierarchy
+2018-04-05 14:07:27.038  INFO 8248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-05 14:07:27.061  INFO 8248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-05 14:07:27.061  INFO 8248 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-05 14:07:27.076  INFO 8248 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-05 14:07:27.193  INFO 8248 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-05 14:07:27.193  INFO 8248 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1403 ms
+2018-04-05 14:07:27.340  INFO 8248 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-05 14:07:27.340  INFO 8248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-05 14:07:27.340  INFO 8248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-05 14:07:27.340  INFO 8248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-05 14:07:27.340  INFO 8248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-05 14:07:27.660  INFO 8248 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2aa5fe93: startup date [Thu Apr 05 14:07:25 CEST 2018]; root of context hierarchy
+2018-04-05 14:07:27.759  INFO 8248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumento(java.lang.Integer)
+2018-04-05 14:07:27.759  INFO 8248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-05 14:07:27.759  INFO 8248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumento(java.lang.Integer)
+2018-04-05 14:07:27.759  INFO 8248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-05 14:07:27.759  INFO 8248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 14:07:27.797  INFO 8248 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:07:27.797  INFO 8248 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:07:27.844  INFO 8248 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:07:28.012  INFO 8248 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-05 14:07:28.059  INFO 8248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-05 14:07:28.069  INFO 8248 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 2.679 seconds (JVM running for 3.102)
+2018-04-05 14:07:28.074  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:07:28.074  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-05 14:07:28.074  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:07:28.076  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:07:28.077  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-05 14:07:28.077  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:07:28.078  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:07:28.079  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-05 14:07:28.079  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:07:28.080  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:07:28.080  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 4 creado correctamente.
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 5 creado correctamente.
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 14:07:27 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo2, Fecha Creación: Thu Apr 05 14:07:27 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 14:07:27 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo4, Fecha Creación: Thu Apr 05 14:07:27 CEST 2018, Público: false y Estado Documento: ELIMINADO
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 14:07:27 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 14:07:27 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 14:07:27 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 14:07:27 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 14:07:27 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 14:07:27 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-05 14:07:28.081  INFO 8248 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-05 14:07:28.081  INFO 8248 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-04-05 14:07:28.081 ERROR 8248 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:771) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at es.fpdual.eadmin.eadmin.EadminApplication.main(EadminApplication.java:29) [classes/:na]
+Caused by: java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Unknown Source) ~[na:1.8.0_152]
+	at es.fpdual.eadmin.eadmin.repositorio.impl.RepositorioDocumentoImpl.eliminarDocumento2(RepositorioDocumentoImpl.java:87) ~[classes/:na]
+	at es.fpdual.eadmin.eadmin.CargarDatosIniciales.run(CargarDatosIniciales.java:38) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:781) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	... 5 common frames omitted
+
+2018-04-05 14:07:28.097  INFO 8248 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2aa5fe93: startup date [Thu Apr 05 14:07:25 CEST 2018]; root of context hierarchy
+2018-04-05 14:07:28.097  INFO 8248 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-04-05 14:09:03.698  INFO 7400 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 7400 (C:\Users\formacion\Desktop\Java\eadmin-master\target\classes started by formacion in C:\Users\formacion\Desktop\Java\eadmin-master)
+2018-04-05 14:09:03.714  INFO 7400 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-05 14:09:03.767  INFO 7400 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@21507a04: startup date [Thu Apr 05 14:09:03 CEST 2018]; root of context hierarchy
+2018-04-05 14:09:04.975  INFO 7400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-05 14:09:05.005  INFO 7400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-05 14:09:05.005  INFO 7400 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-05 14:09:05.017  INFO 7400 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-05 14:09:05.163  INFO 7400 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-05 14:09:05.164  INFO 7400 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1397 ms
+2018-04-05 14:09:05.309  INFO 7400 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-05 14:09:05.314  INFO 7400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-05 14:09:05.314  INFO 7400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-05 14:09:05.315  INFO 7400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-05 14:09:05.315  INFO 7400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-05 14:09:05.649  INFO 7400 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@21507a04: startup date [Thu Apr 05 14:09:03 CEST 2018]; root of context hierarchy
+2018-04-05 14:09:05.736  INFO 7400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-05 14:09:05.738  INFO 7400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumento(java.lang.Integer)
+2018-04-05 14:09:05.739  INFO 7400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumento(java.lang.Integer)
+2018-04-05 14:09:05.746  INFO 7400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-05 14:09:05.747  INFO 7400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 14:09:05.794  INFO 7400 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:09:05.795  INFO 7400 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:09:05.845  INFO 7400 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:09:06.025  INFO 7400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-05 14:09:06.063  INFO 7400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-05 14:09:06.067  INFO 7400 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 2.7 seconds (JVM running for 3.156)
+2018-04-05 14:09:06.071  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:09:06.071  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-05 14:09:06.071  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:09:06.073  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:09:06.073  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-05 14:09:06.073  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:09:06.074  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:09:06.074  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-05 14:09:06.075  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:09:06.075  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:09:06.076  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 4 creado correctamente.
+2018-04-05 14:09:06.076  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:09:06.077  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:09:06.077  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 5 creado correctamente.
+2018-04-05 14:09:06.077  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:09:06.078  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 14:09:06.078  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 14:09:05 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 14:09:06.079  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo2, Fecha Creación: Thu Apr 05 14:09:05 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 14:09:06.079  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 14:09:05 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 14:09:06.079  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo4, Fecha Creación: Thu Apr 05 14:09:05 CEST 2018, Público: false y Estado Documento: ELIMINADO
+2018-04-05 14:09:06.079  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 14:09:05 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 14:09:06.080  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 14:09:06.081  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
+2018-04-05 14:09:06.082  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
+2018-04-05 14:09:06.083  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
+2018-04-05 14:09:06.083  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
+2018-04-05 14:09:06.084  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 14:09:06.084  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 14:09:05 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 14:09:06.084  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 14:09:05 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 14:09:06.085  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 14:09:05 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 14:09:06.085  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 14:09:05 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 14:09:06.085  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 14:09:05 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 14:09:06.085  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 14:09:06.086  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-05 14:09:06.087  INFO 7400 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-05 14:09:06.093  INFO 7400 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-04-05 14:09:06.102 ERROR 7400 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:771) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at es.fpdual.eadmin.eadmin.EadminApplication.main(EadminApplication.java:29) [classes/:na]
+Caused by: java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Unknown Source) ~[na:1.8.0_152]
+	at es.fpdual.eadmin.eadmin.repositorio.impl.RepositorioDocumentoImpl.eliminarDocumento2(RepositorioDocumentoImpl.java:87) ~[classes/:na]
+	at es.fpdual.eadmin.eadmin.CargarDatosIniciales.run(CargarDatosIniciales.java:38) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:781) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	... 5 common frames omitted
+
+2018-04-05 14:09:06.104  INFO 7400 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@21507a04: startup date [Thu Apr 05 14:09:03 CEST 2018]; root of context hierarchy
+2018-04-05 14:09:06.106  INFO 7400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-04-05 14:29:04.846  INFO 5616 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 5616 (C:\Users\formacion\Desktop\Java\eadmin-master\target\classes started by formacion in C:\Users\formacion\Desktop\Java\eadmin-master)
+2018-04-05 14:29:04.846  INFO 5616 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-05 14:29:04.899  INFO 5616 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@21507a04: startup date [Thu Apr 05 14:29:04 CEST 2018]; root of context hierarchy
+2018-04-05 14:29:06.114  INFO 5616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-05 14:29:06.147  INFO 5616 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-05 14:29:06.148  INFO 5616 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-05 14:29:06.160  INFO 5616 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-05 14:29:06.287  INFO 5616 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-05 14:29:06.287  INFO 5616 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1388 ms
+2018-04-05 14:29:06.438  INFO 5616 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-05 14:29:06.443  INFO 5616 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-05 14:29:06.444  INFO 5616 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-05 14:29:06.444  INFO 5616 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-05 14:29:06.444  INFO 5616 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-05 14:29:06.761  INFO 5616 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@21507a04: startup date [Thu Apr 05 14:29:04 CEST 2018]; root of context hierarchy
+2018-04-05 14:29:06.862  INFO 5616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumento(java.lang.Integer)
+2018-04-05 14:29:06.862  INFO 5616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-05 14:29:06.862  INFO 5616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumento(java.lang.Integer)
+2018-04-05 14:29:06.862  INFO 5616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-05 14:29:06.862  INFO 5616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 14:29:06.908  INFO 5616 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:29:06.908  INFO 5616 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:29:06.968  INFO 5616 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:29:07.133  INFO 5616 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-05 14:29:07.164  INFO 5616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-05 14:29:07.180  INFO 5616 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 2.681 seconds (JVM running for 3.109)
+2018-04-05 14:29:07.180  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:29:07.180  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-05 14:29:07.180  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:29:07.180  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:29:07.180  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-05 14:29:07.180  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:29:07.180  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:29:07.180  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-05 14:29:07.180  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:29:07.180  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:29:07.180  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 4 creado correctamente.
+2018-04-05 14:29:07.180  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:29:07.180  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-05 14:29:07.180  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 5 creado correctamente.
+2018-04-05 14:29:07.180  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 14:29:06 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo2, Fecha Creación: Thu Apr 05 14:29:06 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 14:29:06 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo4, Fecha Creación: Thu Apr 05 14:29:06 CEST 2018, Público: false y Estado Documento: ELIMINADO
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 14:29:06 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Thu Apr 05 14:29:06 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 14:29:06 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 14:29:06 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 14:29:06 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 14:29:06 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Thu Apr 05 14:29:06 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Thu Apr 05 14:29:06 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-05 14:29:07.195  INFO 5616 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
