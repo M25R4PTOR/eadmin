@@ -68,3 +68,23 @@ Código: 4, Nombre: Expediente4, Fecha Creación: Fri Apr 06 12:53:35 CEST 2018,
 *************************************************************************
 Código: 5, Nombre: Expediente5, Fecha Creación: Fri Apr 06 12:53:35 CEST 2018, Fecha Archivado: Fri Apr 06 12:53:35 CEST 2018, Público: true y Estado Expediente: ARCHIVADO, Lista de Documentos: [Documento con código 2, Documento con código 4]
 *************************************************************************
+Código: 1, Nombre: Expediente1, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Fecha Archivado: Fri Apr 06 13:12:24 CEST 2018, Público: true y Estado Expediente: ARCHIVADO, Lista de Documentos: [Documento con código 2, Documento con código 4]
+*************************************************************************
+Código: 2, Nombre: Expediente2, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Fecha Archivado: Fri Apr 06 13:12:24 CEST 2018, Público: false y Estado Expediente: EN_TRAMITE, Lista de Documentos: [Documento con código 2, Documento con código 4]
+*************************************************************************
+Código: 3, Nombre: Expediente3, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Fecha Archivado: Fri Apr 06 13:12:24 CEST 2018, Público: true y Estado Expediente: INICIADO, Lista de Documentos: [Documento con código 2, Documento con código 4]
+*************************************************************************
+Código: 4, Nombre: Expediente4, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Fecha Archivado: Fri Apr 06 13:12:24 CEST 2018, Público: false y Estado Expediente: EN_TRAMITE, Lista de Documentos: [Documento con código 2, Documento con código 4]
+*************************************************************************
+Código: 5, Nombre: Expediente5, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Fecha Archivado: Fri Apr 06 13:12:24 CEST 2018, Público: true y Estado Expediente: ARCHIVADO, Lista de Documentos: [Documento con código 2, Documento con código 4]
+*************************************************************************
+Código: 1, Nombre: Expediente1, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Fecha Archivado: Fri Apr 06 13:13:48 CEST 2018, Público: true y Estado Expediente: ARCHIVADO, Lista de Documentos: [Documento con código 2, Documento con código 4]
+*************************************************************************
+Código: 2, Nombre: Expediente2, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Fecha Archivado: Fri Apr 06 13:13:48 CEST 2018, Público: false y Estado Expediente: EN_TRAMITE, Lista de Documentos: [Documento con código 2, Documento con código 4]
+*************************************************************************
+Código: 3, Nombre: Expediente3, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Fecha Archivado: Fri Apr 06 13:13:48 CEST 2018, Público: true y Estado Expediente: INICIADO, Lista de Documentos: [Documento con código 2, Documento con código 4]
+*************************************************************************
+Código: 4, Nombre: Expediente4, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Fecha Archivado: Fri Apr 06 13:13:48 CEST 2018, Público: false y Estado Expediente: EN_TRAMITE, Lista de Documentos: [Documento con código 2, Documento con código 4]
+*************************************************************************
+Código: 5, Nombre: Expediente5, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Fecha Archivado: Fri Apr 06 13:13:48 CEST 2018, Público: true y Estado Expediente: ARCHIVADO, Lista de Documentos: [Documento con código 2, Documento con código 4]
+*************************************************************************

@@ -633,3 +633,195 @@ Caused by: java.net.BindException: Address already in use: bind
 2018-04-06 12:53:36.080  INFO 3500 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 12:53:35 CEST 2018, Público: true y Estado Documento: ELIMINADO
 2018-04-06 12:53:36.080  INFO 3500 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
 2018-04-06 12:53:36.096  INFO 3500 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
+2018-04-06 13:12:23.706  INFO 9448 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-06 13:12:23.720  INFO 9448 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-06 13:12:23.721  INFO 9448 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-06 13:12:23.847  INFO 9448 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-06 13:12:24.597  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-06 13:12:24.597  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-06 13:12:24.597  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-06 13:12:24.597  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:12:24.846  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:12:24.856  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-06 13:12:24.856  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-06 13:12:24.856  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 4 creado correctamente.
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 5 creado correctamente.
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo2, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo4, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: false y Estado Documento: ELIMINADO
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
+2018-04-06 13:12:24.857  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-06 13:12:24.873  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:12:24 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:12:24.889  INFO 9448 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:12:24.904  INFO 9448 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
+2018-04-06 13:13:48.081  INFO 8460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-06 13:13:48.096  INFO 8460 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-06 13:13:48.097  INFO 8460 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-06 13:13:48.222  INFO 8460 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-06 13:13:49.004  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-06 13:13:49.004  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-06 13:13:49.004  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-06 13:13:49.004  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:13:49.207  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:13:49.207  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-06 13:13:49.216  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-06 13:13:49.216  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 4 creado correctamente.
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 5 creado correctamente.
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo2, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo4, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: false y Estado Documento: ELIMINADO
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.217  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: true y Estado Documento: ACTIVO
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-06 13:13:49.233  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entra en exportar Excel
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de exportar Excel
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: false y Estado Documento: APROBADO
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Fri Apr 06 13:13:48 CEST 2018, Público: true y Estado Documento: ELIMINADO
+2018-04-06 13:13:49.248  INFO 8460 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
+2018-04-06 13:13:49.264  INFO 8460 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run

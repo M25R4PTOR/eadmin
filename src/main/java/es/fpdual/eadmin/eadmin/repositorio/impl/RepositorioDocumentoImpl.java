@@ -110,7 +110,7 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 			documentos.remove(documentoEncontrado.get());
 			LOGGER.info("Documento eliminado.");
 			guardarDocumentoEnFichero(documentoEncontrado.get(), "Eliminar.txt");
-			exportarExcel(documentoEncontrado, "Eliminar.xls");
+			exportarExcel(documentoEncontrado.get(), "Eliminar.xls");
 		} else {
 			LOGGER.info("Saliendo del método \"eliminarDocumento\" sin eliminar");
 		}
@@ -225,7 +225,7 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 			dataRow.createCell(0).setCellValue(codigo);
 			dataRow.createCell(1).setCellValue(nombre);
 			dataRow.createCell(2).setCellValue(fechaCreacion.toString());
-			dataRow.createCell(3).setCellValue(publico);
+			dataRow.createCell(3).setCellValue(publico.toString());
 			dataRow.createCell(4).setCellValue(estado.toString());
 			
 			
