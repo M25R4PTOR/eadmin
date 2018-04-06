@@ -1,17 +1,28 @@
 package es.fpdual.eadmin.eadmin.repositorio.impl;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.CellStyle;
 import org.slf4j.Logger;
 
 import es.fpdual.eadmin.eadmin.modelo.Documento;
+import es.fpdual.eadmin.eadmin.modelo.EstadoDocumento;
 import es.fpdual.eadmin.eadmin.repositorio.RepositorioDocumento;
 
 @Repository
@@ -37,9 +48,11 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 		LOGGER.info("Saliendo del método \"altaDocumento\"");
 	}
 
+	@Override
 	public void altaDocumento2(Documento documento) {
 		altaDocumento(documento);
 		guardarDocumentoEnFichero(documento, "Alta.txt");
+		exportarExcel(documento, "Alta.xls");
 	}
 
 	@Override
@@ -52,9 +65,11 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 		LOGGER.info("Saliendo del método \"modificarDocumento\"");
 	}
 
+	@Override
 	public void modificarDocumento2(Documento documento) {
 		modificarDocumento(documento);
 		guardarDocumentoEnFichero(documento, "Modificar.txt");
+		exportarExcel(documento, "Modificar.xls");
 	}
 
 	@Override
@@ -86,6 +101,8 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 //		Optional<Documento> aux = documentos.stream().filter(d -> tieneIgualCodigo(d, codigo)).findFirst();
 //		guardarDocumentoEnFichero(aux.get(), "Eliminar.txt");
 //	}
+	
+	@Override
 	public void eliminarDocumento2(Integer codigo) {
 		LOGGER.info("Entrando en el método \"eliminarDocumento\"");
 		Optional<Documento> documentoEncontrado = documentos.stream().filter(d -> tieneIgualCodigo(d, codigo)).findFirst();
@@ -93,6 +110,7 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 			documentos.remove(documentoEncontrado.get());
 			LOGGER.info("Documento eliminado.");
 			guardarDocumentoEnFichero(documentoEncontrado.get(), "Eliminar.txt");
+			exportarExcel(documentoEncontrado, "Eliminar.xls");
 		} else {
 			LOGGER.info("Saliendo del método \"eliminarDocumento\" sin eliminar");
 		}
@@ -167,5 +185,59 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 			e.printStackTrace();
 			pw.close();
 		}
+	}
+	
+	public static void exportarExcel(Object o, String nombreFichero){
+		LOGGER.info("Entra en exportar Excel");
+		Object[][] data;
+		if(o instanceof Documento) {
+			data = new Object[][] {new Object[] {((Documento) o).getCodigo(), ((Documento) o).getNombre(), ((Documento) o).getFechaCreacion(), ((Documento) o).getPublico(), ((Documento) o).getEstado()}};
+		}else {
+			data = new Object[][] {};
+		}
+		
+		HSSFWorkbook workbook = new HSSFWorkbook();
+		HSSFSheet sheet = workbook.createSheet();
+		workbook.setSheetName(0, "Hoja excel");
+
+		String[] headers = new String[] { "Codigo", "Nombre", "Fecha Creación", "Publico", "Estado Documento" };
+
+		CellStyle headerStyle = workbook.createCellStyle();
+		
+		HSSFRow headerRow = sheet.createRow(0);
+		for (int i = 0; i < headers.length; ++i) {
+			String header = headers[i];
+			HSSFCell cell = headerRow.createCell(i);
+			cell.setCellStyle(headerStyle);
+			cell.setCellValue(header);
+		}
+
+		for (int i = 0; i < data.length; ++i) {
+			HSSFRow dataRow = sheet.createRow(i + 1);
+
+			Object[] d = data[i];
+			Integer codigo = (Integer) d[0];
+			String nombre = (String) d[1];
+			Date fechaCreacion = (Date) d[2];
+			Boolean publico = (Boolean) d[3];
+			EstadoDocumento estado = (EstadoDocumento) d[4];
+
+			dataRow.createCell(0).setCellValue(codigo);
+			dataRow.createCell(1).setCellValue(nombre);
+			dataRow.createCell(2).setCellValue(fechaCreacion.toString());
+			dataRow.createCell(3).setCellValue(publico);
+			dataRow.createCell(4).setCellValue(estado.toString());
+			
+			
+			try {
+				FileOutputStream file = new FileOutputStream(nombreFichero);
+				workbook.write(file);
+				file.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			
+		}
+		LOGGER.info("Saliendo de exportar Excel");
 	}
 }
