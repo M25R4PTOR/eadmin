@@ -1,28 +1,26 @@
 package es.fpdual.eadmin.eadmin.repositorio.impl;
 
+import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
-
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
-import org.apache.poi.hssf.usermodel.HSSFCell;
-import org.apache.poi.hssf.usermodel.HSSFRow;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.slf4j.Logger;
 
 import es.fpdual.eadmin.eadmin.modelo.Documento;
-import es.fpdual.eadmin.eadmin.modelo.EstadoDocumento;
 import es.fpdual.eadmin.eadmin.repositorio.RepositorioDocumento;
 
 @Repository
@@ -52,7 +50,7 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 	public void altaDocumento2(Documento documento) {
 		altaDocumento(documento);
 		guardarDocumentoEnFichero(documento, "Alta.txt");
-		exportarExcel(documento, "Alta.xls");
+		exportarExcel("Alta", documento, "ExcelDocumentos.xlsx");
 	}
 
 	@Override
@@ -69,7 +67,7 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 	public void modificarDocumento2(Documento documento) {
 		modificarDocumento(documento);
 		guardarDocumentoEnFichero(documento, "Modificar.txt");
-		exportarExcel(documento, "Modificar.xls");
+		exportarExcel("Modificar", documento, "ExcelDocumentos.xlsx");
 	}
 
 	@Override
@@ -96,21 +94,16 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 		}
 	}
 
-//	public void eliminarDocumento2(Integer codigo) {
-//		eliminarDocumento(codigo);
-//		Optional<Documento> aux = documentos.stream().filter(d -> tieneIgualCodigo(d, codigo)).findFirst();
-//		guardarDocumentoEnFichero(aux.get(), "Eliminar.txt");
-//	}
-	
 	@Override
 	public void eliminarDocumento2(Integer codigo) {
 		LOGGER.info("Entrando en el método \"eliminarDocumento\"");
-		Optional<Documento> documentoEncontrado = documentos.stream().filter(d -> tieneIgualCodigo(d, codigo)).findFirst();
+		Optional<Documento> documentoEncontrado = documentos.stream().filter(d -> tieneIgualCodigo(d, codigo))
+				.findFirst();
 		if (documentoEncontrado.isPresent()) {
 			documentos.remove(documentoEncontrado.get());
 			LOGGER.info("Documento eliminado.");
 			guardarDocumentoEnFichero(documentoEncontrado.get(), "Eliminar.txt");
-			exportarExcel(documentoEncontrado.get(), "Eliminar.xls");
+			exportarExcel("Eliminar", documentoEncontrado.get(), "ExcelDocumentos.xlsx");
 		} else {
 			LOGGER.info("Saliendo del método \"eliminarDocumento\" sin eliminar");
 		}
@@ -157,6 +150,7 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 						+ d.getFechaCreacion() + ", Público: " + d.getPublico() + " y Estado Documento: "
 						+ d.getEstado());
 				pw.println("*************************************************************************");
+				exportarExcel("Documentos", d, "ExcelDocumentos.xlsx");
 			}
 			pw.close();
 
@@ -172,7 +166,8 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 		FileWriter file = null;
 		PrintWriter pw = null;
 		try {
-			file = new FileWriter(nombreFichero, true); // Continuando la escritura --> file = new FileWriter(nombreFichero, true); 
+			file = new FileWriter(nombreFichero, true); // Continuando la escritura --> file = new
+														// FileWriter(nombreFichero, true);
 			pw = new PrintWriter(file);
 			pw.println("Código: " + doc.getCodigo() + ", Nombre: " + doc.getNombre() + ", Fecha Creación: "
 					+ doc.getFechaCreacion() + ", Público: " + doc.getPublico() + " y Estado Documento: "
@@ -186,58 +181,81 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 			pw.close();
 		}
 	}
-	
-	public static void exportarExcel(Object o, String nombreFichero){
-		LOGGER.info("Entra en exportar Excel");
-		Object[][] data;
-		if(o instanceof Documento) {
-			data = new Object[][] {new Object[] {((Documento) o).getCodigo(), ((Documento) o).getNombre(), ((Documento) o).getFechaCreacion(), ((Documento) o).getPublico(), ((Documento) o).getEstado()}};
-		}else {
-			data = new Object[][] {};
-		}
-		
-		HSSFWorkbook workbook = new HSSFWorkbook();
-		HSSFSheet sheet = workbook.createSheet();
-		workbook.setSheetName(0, "Hoja excel");
 
-		String[] headers = new String[] { "Codigo", "Nombre", "Fecha Creación", "Publico", "Estado Documento" };
+	public static void exportarExcel(String nombreHoja, Documento documento, String fileName) {
+		LOGGER.info("Entrando a Exporta Excel");
+		try {
 
-		CellStyle headerStyle = workbook.createCellStyle();
-		
-		HSSFRow headerRow = sheet.createRow(0);
-		for (int i = 0; i < headers.length; ++i) {
-			String header = headers[i];
-			HSSFCell cell = headerRow.createCell(i);
-			cell.setCellStyle(headerStyle);
-			cell.setCellValue(header);
-		}
+			FileInputStream inputStream = new FileInputStream(new File(fileName));
 
-		for (int i = 0; i < data.length; ++i) {
-			HSSFRow dataRow = sheet.createRow(i + 1);
+			Workbook workbook = WorkbookFactory.create(inputStream);
 
-			Object[] d = data[i];
-			Integer codigo = (Integer) d[0];
-			String nombre = (String) d[1];
-			Date fechaCreacion = (Date) d[2];
-			Boolean publico = (Boolean) d[3];
-			EstadoDocumento estado = (EstadoDocumento) d[4];
+			int numeroHoja;
 
-			dataRow.createCell(0).setCellValue(codigo);
-			dataRow.createCell(1).setCellValue(nombre);
-			dataRow.createCell(2).setCellValue(fechaCreacion.toString());
-			dataRow.createCell(3).setCellValue(publico.toString());
-			dataRow.createCell(4).setCellValue(estado.toString());
-			
-			
-			try {
-				FileOutputStream file = new FileOutputStream(nombreFichero);
-				workbook.write(file);
-				file.close();
-			} catch (IOException e) {
-				e.printStackTrace();
+			if (nombreHoja.equals("Documentos")) {
+
+				numeroHoja = 0;
+
+			} else if (nombreHoja.equals("Alta")) {
+
+				numeroHoja = 1;
+
+			} else if (nombreHoja.equals("Modificar")) {
+
+				numeroHoja = 2;
+
+			} else {
+
+				numeroHoja = 3;
+
 			}
-			
+
+			Sheet sheet = workbook.getSheetAt(numeroHoja);
+
+			Object[] bookData = { documento.getCodigo(), documento.getNombre(), documento.getFechaCreacion().toString(), documento.getEstado().toString() };
+
+			int rowCount = sheet.getLastRowNum();
+
+			Row row = sheet.createRow(++rowCount);
+
+			int columnCount = 0;
+
+			Cell cell = row.createCell(columnCount);
+
+			//cell.setCellValue(rowCount);
+
+			for (Object field : bookData) {
+
+				cell = row.createCell(columnCount++);
+
+				if (field instanceof String) {
+
+					cell.setCellValue((String) field);
+
+				} else if (field instanceof Integer) {
+
+					cell.setCellValue((Integer) field);
+
+				}
+
+			}
+
+			inputStream.close();
+
+			FileOutputStream outputStream = new FileOutputStream(fileName);
+
+			workbook.write(outputStream);
+
+			workbook.close();
+
+			outputStream.close();
+
+		} catch (IOException | EncryptedDocumentException | InvalidFormatException ex) {
+
+			ex.printStackTrace();
+
 		}
-		LOGGER.info("Saliendo de exportar Excel");
+		LOGGER.info("Saliendo de Exporta Excel");
 	}
+
 }

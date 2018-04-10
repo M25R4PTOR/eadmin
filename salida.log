@@ -1,10 +1,52 @@
-2018-04-06 13:13:48 INFO  RequestMappingHandlerMapping:548 - Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumento(java.lang.Integer)
-2018-04-06 13:13:48 INFO  RequestMappingHandlerMapping:548 - Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
-2018-04-06 13:13:48 INFO  RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-04-06 13:13:48 INFO  RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-04-06 13:13:48 INFO  SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-04-06 13:13:48 INFO  SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-04-06 13:13:48 INFO  SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-04-06 13:13:48 INFO  AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
-2018-04-06 13:13:49 INFO  TomcatWebServer:205 - Tomcat started on port(s): 8080 (http) with context path ''
-2018-04-06 13:13:49 INFO  EadminApplication:59 - Started EadminApplication in 2.542 seconds (JVM running for 3.009)
+2018-04-10 11:07:10 INFO  RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-10 11:07:10 INFO  RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-10 11:07:10 INFO  SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-10 11:07:10 INFO  SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-10 11:07:10 INFO  SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-10 11:07:10 INFO  AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-04-10 11:07:11 INFO  TomcatWebServer:205 - Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-10 11:07:11 INFO  EadminApplication:59 - Started EadminApplication in 3.582 seconds (JVM running for 4.078)
+2018-04-10 11:10:09 INFO  EadminApplication:50 - Starting EadminApplication on mvformacion with PID 2960 (C:\Users\formacion\Desktop\Java\eadmin-master\target\classes started by formacion in C:\Users\formacion\Desktop\Java\eadmin-master)
+2018-04-10 11:10:09 INFO  EadminApplication:652 - No active profile set, falling back to default profiles: default
+2018-04-10 11:10:09 INFO  AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fc229ab: startup date [Tue Apr 10 11:10:09 CEST 2018]; root of context hierarchy
+2018-04-10 11:10:11 INFO  TomcatWebServer:91 - Tomcat initialized with port(s): 8080 (http)
+2018-04-10 11:10:11 INFO  ContextLoader:285 - Root WebApplicationContext: initialization completed in 1437 ms
+2018-04-10 11:10:11 INFO  ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-04-10 11:10:11 INFO  FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-10 11:10:11 INFO  FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-10 11:10:11 INFO  FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-10 11:10:11 INFO  FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-10 11:10:11 INFO  RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fc229ab: startup date [Tue Apr 10 11:10:09 CEST 2018]; root of context hierarchy
+2018-04-10 11:10:11 INFO  RequestMappingHandlerMapping:548 - Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumento(java.lang.Integer)
+2018-04-10 11:10:11 INFO  RequestMappingHandlerMapping:548 - Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-10 11:10:11 INFO  RequestMappingHandlerMapping:548 - Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumento(java.lang.Integer)
+2018-04-10 11:10:11 INFO  RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-10 11:10:11 INFO  RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-10 11:10:11 INFO  SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-10 11:10:11 INFO  SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-10 11:10:11 INFO  SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-10 11:10:11 INFO  AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-04-10 11:10:12 INFO  TomcatWebServer:205 - Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-10 11:10:12 INFO  EadminApplication:59 - Started EadminApplication in 2.641 seconds (JVM running for 3.122)
+2018-04-10 11:17:36 INFO  EadminApplication:50 - Starting EadminApplication on mvformacion with PID 7816 (C:\Users\formacion\Desktop\Java\eadmin-master\target\classes started by formacion in C:\Users\formacion\Desktop\Java\eadmin-master)
+2018-04-10 11:17:36 INFO  EadminApplication:652 - No active profile set, falling back to default profiles: default
+2018-04-10 11:17:36 INFO  AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a0dcaa: startup date [Tue Apr 10 11:17:36 CEST 2018]; root of context hierarchy
+2018-04-10 11:17:37 INFO  TomcatWebServer:91 - Tomcat initialized with port(s): 8080 (http)
+2018-04-10 11:17:37 INFO  ContextLoader:285 - Root WebApplicationContext: initialization completed in 1394 ms
+2018-04-10 11:17:37 INFO  ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-04-10 11:17:37 INFO  FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-10 11:17:37 INFO  FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-10 11:17:37 INFO  FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-10 11:17:37 INFO  FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-10 11:17:38 INFO  RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a0dcaa: startup date [Tue Apr 10 11:17:36 CEST 2018]; root of context hierarchy
+2018-04-10 11:17:38 INFO  RequestMappingHandlerMapping:548 - Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-10 11:17:38 INFO  RequestMappingHandlerMapping:548 - Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumento(java.lang.Integer)
+2018-04-10 11:17:38 INFO  RequestMappingHandlerMapping:548 - Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumento(java.lang.Integer)
+2018-04-10 11:17:38 INFO  RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-10 11:17:38 INFO  RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-10 11:17:38 INFO  SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-10 11:17:38 INFO  SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-10 11:17:38 INFO  SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-10 11:17:38 INFO  AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-04-10 11:17:38 INFO  TomcatWebServer:205 - Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-10 11:17:38 INFO  EadminApplication:59 - Started EadminApplication in 2.604 seconds (JVM running for 3.085)
