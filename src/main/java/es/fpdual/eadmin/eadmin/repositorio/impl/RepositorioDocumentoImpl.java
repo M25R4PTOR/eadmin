@@ -14,6 +14,8 @@ import org.springframework.stereotype.Repository;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -221,11 +223,19 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 			int columnCount = 0;
 
 			Cell cell = row.createCell(columnCount);
-
 			//cell.setCellValue(rowCount);
-
+			
+			CellStyle style = workbook.createCellStyle();
+			style.setFillForegroundColor(IndexedColors.LIGHT_YELLOW.getIndex());
+			style.setFillPattern(CellStyle.SOLID_FOREGROUND);
+			CellStyle style2 = workbook.createCellStyle();
+			style2.setFillForegroundColor(IndexedColors.RED.getIndex());
+			style2.setFillPattern(CellStyle.SOLID_FOREGROUND);
+			
+			
+			int color = 0;
 			for (Object field : bookData) {
-
+				
 				cell = row.createCell(columnCount++);
 
 				if (field instanceof String) {
@@ -237,7 +247,12 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 					cell.setCellValue((Integer) field);
 
 				}
-
+				if(color%2==0) {
+					cell.setCellStyle(style);
+				}else {
+					cell.setCellStyle(style2);
+				}
+				color++;
 			}
 
 			inputStream.close();

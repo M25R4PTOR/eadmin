@@ -106,3 +106,15 @@ Código: 2, Nombre: Ejemplo5, Fecha Creación: Tue Apr 10 11:17:37 CEST 2018, P�
 *************************************************************************
 Código: 4, Nombre: Ejemplo3, Fecha Creación: Tue Apr 10 11:17:37 CEST 2018, Público: true y Estado Documento: ELIMINADO
 *************************************************************************
+Código: 2, Nombre: Ejemplo5, Fecha Creación: Tue Apr 10 12:34:59 CEST 2018, Público: false y Estado Documento: APROBADO
+*************************************************************************
+Código: 4, Nombre: Ejemplo3, Fecha Creación: Tue Apr 10 12:34:59 CEST 2018, Público: true y Estado Documento: ELIMINADO
+*************************************************************************
+Código: 2, Nombre: Ejemplo5, Fecha Creación: Tue Apr 10 12:40:12 CEST 2018, Público: false y Estado Documento: APROBADO
+*************************************************************************
+Código: 4, Nombre: Ejemplo3, Fecha Creación: Tue Apr 10 12:40:12 CEST 2018, Público: true y Estado Documento: ELIMINADO
+*************************************************************************
+Código: 2, Nombre: Ejemplo5, Fecha Creación: Tue Apr 10 12:52:06 CEST 2018, Público: false y Estado Documento: APROBADO
+*************************************************************************
+Código: 4, Nombre: Ejemplo3, Fecha Creación: Tue Apr 10 12:52:06 CEST 2018, Público: true y Estado Documento: ELIMINADO
+*************************************************************************
