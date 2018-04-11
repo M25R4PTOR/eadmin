@@ -1,120 +1,25 @@
-2018-04-10 13:00:43.412  INFO 6480 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-04-10 13:00:43.415  INFO 6480 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
-2018-04-10 13:00:43.416  INFO 6480 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
-2018-04-10 13:00:43.558  INFO 6480 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-04-10 13:00:44.292  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
-2018-04-10 13:00:44.292  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
-2018-04-10 13:00:44.292  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
-2018-04-10 13:00:44.292  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:44.792  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:44.792  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
-2018-04-10 13:00:44.797  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
-2018-04-10 13:00:44.797  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
-2018-04-10 13:00:44.798  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:44.830  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:44.830  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
-2018-04-10 13:00:44.830  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
-2018-04-10 13:00:44.830  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
-2018-04-10 13:00:44.830  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:44.877  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:44.877  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
-2018-04-10 13:00:44.877  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 4 creado correctamente.
-2018-04-10 13:00:44.877  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
-2018-04-10 13:00:44.877  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:44.955  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:44.955  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "altaDocumento"
-2018-04-10 13:00:44.955  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 5 creado correctamente.
-2018-04-10 13:00:44.955  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "altaDocumento"
-2018-04-10 13:00:44.955  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:44.987  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:45.002  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.002  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: true y Estado Documento: ACTIVO
-2018-04-10 13:00:45.002  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo2, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: false y Estado Documento: APROBADO
-2018-04-10 13:00:45.002  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: true y Estado Documento: ELIMINADO
-2018-04-10 13:00:45.002  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo4, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: false y Estado Documento: ELIMINADO
-2018-04-10 13:00:45.002  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: false y Estado Documento: APROBADO
-2018-04-10 13:00:45.002  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.002  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:45.049  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:45.049  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:45.080  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:45.080  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:45.127  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:45.127  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:45.155  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:45.155  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:45.202  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:45.202  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
-2018-04-10 13:00:45.202  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
-2018-04-10 13:00:45.202  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:45.233  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:45.233  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "modificarDocumento"
-2018-04-10 13:00:45.233  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "modificarDocumento"
-2018-04-10 13:00:45.233  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:45.280  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:45.280  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.280  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 1, Nombre: Ejemplo1, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: true y Estado Documento: ACTIVO
-2018-04-10 13:00:45.280  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: false y Estado Documento: APROBADO
-2018-04-10 13:00:45.280  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 3, Nombre: Ejemplo3, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: true y Estado Documento: ELIMINADO
-2018-04-10 13:00:45.280  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: true y Estado Documento: ELIMINADO
-2018-04-10 13:00:45.280  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 5, Nombre: Ejemplo5, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: false y Estado Documento: APROBADO
-2018-04-10 13:00:45.280  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.280  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:45.342  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:45.342  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:45.389  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:45.389  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:45.437  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:45.437  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:45.468  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:45.468  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:45.499  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:45.499  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
-2018-04-10 13:00:45.515  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
-2018-04-10 13:00:45.515  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:45.530  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:45.530  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
-2018-04-10 13:00:45.530  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
-2018-04-10 13:00:45.530  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:45.577  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:45.577  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "eliminarDocumento"
-2018-04-10 13:00:45.577  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento eliminado.
-2018-04-10 13:00:45.577  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:45.608  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:45.608  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.608  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: false y Estado Documento: APROBADO
-2018-04-10 13:00:45.608  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: true y Estado Documento: ELIMINADO
-2018-04-10 13:00:45.608  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.608  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:45.640  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:45.640  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando a Exporta Excel
-2018-04-10 13:00:45.671  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de Exporta Excel
-2018-04-10 13:00:45.671  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.671  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: false y Estado Documento: APROBADO
-2018-04-10 13:00:45.671  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: true y Estado Documento: ELIMINADO
-2018-04-10 13:00:45.671  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.671  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.671  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: false y Estado Documento: APROBADO
-2018-04-10 13:00:45.671  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: true y Estado Documento: ELIMINADO
-2018-04-10 13:00:45.671  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: false y Estado Documento: APROBADO
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: true y Estado Documento: ELIMINADO
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: false y Estado Documento: APROBADO
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: true y Estado Documento: ELIMINADO
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: false y Estado Documento: APROBADO
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: true y Estado Documento: ELIMINADO
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: false y Estado Documento: APROBADO
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: true y Estado Documento: ELIMINADO
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en el método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 2, Nombre: Ejemplo5, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: false y Estado Documento: APROBADO
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Código: 4, Nombre: Ejemplo3, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: true y Estado Documento: ELIMINADO
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo del método "obtenerTodosLosDocumentos"
-2018-04-10 13:00:45.686  INFO 6480 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
+2018-04-11 13:03:30.513  INFO 11148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-11 13:03:30.520  INFO 11148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-11 13:03:30.535  INFO 11148 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-11 13:03:30.661  INFO 11148 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-11 13:03:31.051  INFO 11148 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-04-11 13:04:21.889  INFO 7948 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-11 13:04:21.902  INFO 7948 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-11 13:04:21.903  INFO 7948 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-11 13:04:22.044  INFO 7948 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-11 13:04:22.857  INFO 7948 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-04-11 13:06:32.791  INFO 7728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-11 13:06:32.793  INFO 7728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-11 13:06:32.805  INFO 7728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-11 13:06:32.967  INFO 7728 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-11 13:06:33.369  INFO 7728 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-04-11 13:33:17.231  INFO 3440 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-11 13:33:17.233  INFO 3440 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-11 13:33:17.243  INFO 3440 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-11 13:33:17.383  INFO 3440 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-11 13:33:17.815  INFO 3440 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-04-11 13:33:44.377  INFO 10708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-11 13:33:44.379  INFO 10708 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-11 13:33:44.390  INFO 10708 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-11 13:33:44.527  INFO 10708 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-11 13:33:44.943  INFO 10708 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
