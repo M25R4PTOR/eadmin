@@ -19,7 +19,7 @@ public class ExpedienteTest {
 	
 	@Test
 	public void testGetters() {
-		Expediente ejemplo = new Expediente(CODIGO, NOMBRE, FECHA_CREACION, FECHA_ARCHIVADO, PUBLICO, EstadoExpediente.ARCHIVADO, DOCUMENTOS); 
+		Expediente ejemplo = new Expediente(CODIGO, NOMBRE, FECHA_CREACION, FECHA_ARCHIVADO, PUBLICO, EstadoExpediente.ARCHIVADO, DOCUMENTOS, FECHA_CREACION); 
 		assertEquals(CODIGO, ejemplo.getCodigo());
 		assertEquals(NOMBRE, ejemplo.getNombre());
 		assertEquals(FECHA_CREACION, ejemplo.getFechaCreacion());
@@ -31,8 +31,8 @@ public class ExpedienteTest {
 	
 	@Test 
 	public void testEquals() {
-		Expediente ejemplo = new Expediente(CODIGO, NOMBRE, FECHA_CREACION, FECHA_ARCHIVADO, PUBLICO, EstadoExpediente.ARCHIVADO, DOCUMENTOS); 
-		Expediente ejemplo1 = new Expediente(CODIGO, NOMBRE, FECHA_CREACION, FECHA_ARCHIVADO, PUBLICO, EstadoExpediente.ARCHIVADO, DOCUMENTOS); 
+		Expediente ejemplo = new Expediente(CODIGO, NOMBRE, FECHA_CREACION, FECHA_ARCHIVADO, PUBLICO, EstadoExpediente.ARCHIVADO, DOCUMENTOS, FECHA_CREACION); 
+		Expediente ejemplo1 = new Expediente(CODIGO, NOMBRE, FECHA_CREACION, FECHA_ARCHIVADO, PUBLICO, EstadoExpediente.ARCHIVADO, DOCUMENTOS, FECHA_CREACION); 
 		assertEquals(ejemplo, ejemplo1);
 	}
 }

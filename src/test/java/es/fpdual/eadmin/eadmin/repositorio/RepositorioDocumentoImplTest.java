@@ -15,7 +15,7 @@ public class RepositorioDocumentoImplTest {
 	
 	private static final Date FECHA_CREACION = new Date();
 	private RepositorioDocumentoImpl repositorioDocumento;
-	private static final Documento DOCUMENTO = new Documento(1, "Ejemplo", FECHA_CREACION, true, EstadoDocumento.ACTIVO);
+	private static final Documento DOCUMENTO = new Documento(1, "Ejemplo", FECHA_CREACION, true, EstadoDocumento.ACTIVO, FECHA_CREACION);
 	
 	@Before
 	public void inicializarEnCadaTest() {

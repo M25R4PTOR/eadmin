@@ -15,7 +15,7 @@ public class DocumentoContableTest {
 	private static final Integer CODIGO = 1;
 	private static final BigDecimal IMPORTE = new BigDecimal(1.5);
 	private static final String DNI_INTERESADO = "12345678M";
-	private static final DocumentoContable EJEMPLO = new DocumentoContable(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ACTIVO, IMPORTE, DNI_INTERESADO);
+	private static final DocumentoContable EJEMPLO = new DocumentoContable(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ACTIVO, IMPORTE, DNI_INTERESADO, FECHA_CREACION);
 	
 	@Test
 	public void testGetters() {
@@ -25,7 +25,7 @@ public class DocumentoContableTest {
 	
 	@Test 
 	public void testEquals() {
-		DocumentoContable ejemplo1 = new DocumentoContable(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ACTIVO, IMPORTE, DNI_INTERESADO); 
+		DocumentoContable ejemplo1 = new DocumentoContable(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ACTIVO, IMPORTE, DNI_INTERESADO, FECHA_CREACION); 
 		assertEquals(EJEMPLO, ejemplo1);
 	}
 }

@@ -28,7 +28,7 @@ public class RepositorioExpedienteImplTest {
 	@Before
 	public void instaciarObjetos() {
 		repositorioExpedienteImpl = new RepositorioExpedienteImpl();
-		expediente = new Expediente(1, "Nombre", FECHA_CREACION, FECHA_CREACION, true, EstadoExpediente.ARCHIVADO, new ArrayList<Documento>());
+		expediente = new Expediente(1, "Nombre", FECHA_CREACION, FECHA_CREACION, true, EstadoExpediente.ARCHIVADO, new ArrayList<Documento>(), FECHA_CREACION);
 
 	}
 

@@ -10,7 +10,7 @@ public class DocumentoContableBuilder extends DocumentoBuilder{
 	private String dniInteresado;
 	
 	public DocumentoContable contruir() {
-		return new DocumentoContable(this.codigo, this.nombre, this.fechaCreacion, this.publico, this.estado, this.importe, this.dniInteresado);
+		return new DocumentoContable(this.codigo, this.nombre, this.fechaCreacion, this.publico, this.estado, this.importe, this.dniInteresado, this.fechaUltimaActualizacion);
 	}
 	
 	public DocumentoContableBuilder conImporte(BigDecimal importe) {

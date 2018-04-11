@@ -32,14 +32,14 @@ public class CargarDatosIniciales implements ApplicationRunner{
 	
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		this.repositorioDocumento.altaDocumento2(new Documento(1, "Ejemplo1", FECHA, true, EstadoDocumento.ACTIVO));
-		this.repositorioDocumento.altaDocumento2(new Documento(2, "Ejemplo2", FECHA, false, EstadoDocumento.APROBADO));
-		this.repositorioDocumento.altaDocumento2(new Documento(3, "Ejemplo3", FECHA, true, EstadoDocumento.ELIMINADO));
-		this.repositorioDocumento.altaDocumento2(new Documento(4, "Ejemplo4", FECHA, false, EstadoDocumento.ELIMINADO));
-		this.repositorioDocumento.altaDocumento2(new Documento(5, "Ejemplo5", FECHA, false, EstadoDocumento.APROBADO));
+		this.repositorioDocumento.altaDocumento2(new Documento(1, "Ejemplo1", FECHA, true, EstadoDocumento.ACTIVO, FECHA));
+		this.repositorioDocumento.altaDocumento2(new Documento(2, "Ejemplo2", FECHA, false, EstadoDocumento.APROBADO, FECHA));
+		this.repositorioDocumento.altaDocumento2(new Documento(3, "Ejemplo3", FECHA, true, EstadoDocumento.ELIMINADO, FECHA));
+		this.repositorioDocumento.altaDocumento2(new Documento(4, "Ejemplo4", FECHA, false, EstadoDocumento.ELIMINADO, FECHA));
+		this.repositorioDocumento.altaDocumento2(new Documento(5, "Ejemplo5", FECHA, false, EstadoDocumento.APROBADO, FECHA));
 		RepositorioDocumentoImpl.guardarDocumentosEnFichero(this.repositorioDocumento.obtenerTodosLosDocumentos(), "salidaDeTexto.txt");
-		this.repositorioDocumento.modificarDocumento2(new Documento(2, "Ejemplo5", FECHA, false, EstadoDocumento.APROBADO));
-		this.repositorioDocumento.modificarDocumento2(new Documento(4, "Ejemplo3", FECHA, true, EstadoDocumento.ELIMINADO));
+		this.repositorioDocumento.modificarDocumento2(new Documento(2, "Ejemplo5", FECHA, false, EstadoDocumento.APROBADO, FECHA));
+		this.repositorioDocumento.modificarDocumento2(new Documento(4, "Ejemplo3", FECHA, true, EstadoDocumento.ELIMINADO, FECHA));
 		RepositorioDocumentoImpl.guardarDocumentosEnFichero(this.repositorioDocumento.obtenerTodosLosDocumentos(), "salidaDeTexto.txt");
 		this.repositorioDocumento.eliminarDocumento2(1);
 		this.repositorioDocumento.eliminarDocumento2(3);
@@ -47,14 +47,14 @@ public class CargarDatosIniciales implements ApplicationRunner{
 		RepositorioDocumentoImpl.guardarDocumentosEnFichero(this.repositorioDocumento.obtenerTodosLosDocumentos(), "salidaDeTexto.txt");
 		
 		
-		this.repositorioExpediente.altaExpediente2(new Expediente(1, "Expediente1", FECHA, FECHA, true, EstadoExpediente.ARCHIVADO, repositorioDocumento.obtenerTodosLosDocumentos()));
-		this.repositorioExpediente.altaExpediente2(new Expediente(2, "Expediente2", FECHA, FECHA, false, EstadoExpediente.EN_TRAMITE, repositorioDocumento.obtenerTodosLosDocumentos()));
-		this.repositorioExpediente.altaExpediente2(new Expediente(3, "Expediente3", FECHA, FECHA, true, EstadoExpediente.INICIADO, repositorioDocumento.obtenerTodosLosDocumentos()));
-		this.repositorioExpediente.altaExpediente2(new Expediente(4, "Expediente4", FECHA, FECHA, false, EstadoExpediente.EN_TRAMITE, repositorioDocumento.obtenerTodosLosDocumentos()));
-		this.repositorioExpediente.altaExpediente2(new Expediente(5, "Expediente5", FECHA, FECHA, true, EstadoExpediente.ARCHIVADO, repositorioDocumento.obtenerTodosLosDocumentos()));
+		this.repositorioExpediente.altaExpediente2(new Expediente(1, "Expediente1", FECHA, FECHA, true, EstadoExpediente.ARCHIVADO, repositorioDocumento.obtenerTodosLosDocumentos(), FECHA));
+		this.repositorioExpediente.altaExpediente2(new Expediente(2, "Expediente2", FECHA, FECHA, false, EstadoExpediente.EN_TRAMITE, repositorioDocumento.obtenerTodosLosDocumentos(), FECHA));
+		this.repositorioExpediente.altaExpediente2(new Expediente(3, "Expediente3", FECHA, FECHA, true, EstadoExpediente.INICIADO, repositorioDocumento.obtenerTodosLosDocumentos(), FECHA));
+		this.repositorioExpediente.altaExpediente2(new Expediente(4, "Expediente4", FECHA, FECHA, false, EstadoExpediente.EN_TRAMITE, repositorioDocumento.obtenerTodosLosDocumentos(), FECHA));
+		this.repositorioExpediente.altaExpediente2(new Expediente(5, "Expediente5", FECHA, FECHA, true, EstadoExpediente.ARCHIVADO, repositorioDocumento.obtenerTodosLosDocumentos(), FECHA));
 		RepositorioExpedienteImpl.guardarExpedientesEnFichero(this.repositorioExpediente.obtenerTodosLosExpedientes(), "salidaDeTextoExpediente.txt");
-		this.repositorioExpediente.modificarExpediente2(new Expediente(2, "Expediente1", FECHA, FECHA, true, EstadoExpediente.ARCHIVADO, repositorioDocumento.obtenerTodosLosDocumentos()));
-		this.repositorioExpediente.modificarExpediente2(new Expediente(4, "Expediente3", FECHA, FECHA, true, EstadoExpediente.INICIADO, repositorioDocumento.obtenerTodosLosDocumentos()));
+		this.repositorioExpediente.modificarExpediente2(new Expediente(2, "Expediente1", FECHA, FECHA, true, EstadoExpediente.ARCHIVADO, repositorioDocumento.obtenerTodosLosDocumentos(), FECHA));
+		this.repositorioExpediente.modificarExpediente2(new Expediente(4, "Expediente3", FECHA, FECHA, true, EstadoExpediente.INICIADO, repositorioDocumento.obtenerTodosLosDocumentos(), FECHA));
 		RepositorioExpedienteImpl.guardarExpedientesEnFichero(this.repositorioExpediente.obtenerTodosLosExpedientes(), "salidaDeTextoExpediente.txt");
 		this.repositorioExpediente.eliminarExpediente2(1);
 		this.repositorioExpediente.eliminarExpediente2(3);

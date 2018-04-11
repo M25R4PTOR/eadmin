@@ -12,7 +12,7 @@ public class DocumentoTest {
 	private static final String NOMBRE = "Ejemplo";
 	private static final boolean PUBLICO = true;
 	private static final Integer CODIGO = 1;
-	private static final Documento EJEMPLO = new Documento(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ACTIVO); 
+	private static final Documento EJEMPLO = new Documento(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ACTIVO, FECHA_CREACION); 
 	
 //	@Before
 //	public void inicializar() {
@@ -30,7 +30,7 @@ public class DocumentoTest {
 	
 	@Test 
 	public void testEquals() {
-		Documento ejemplo1 = new Documento(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ACTIVO);
+		Documento ejemplo1 = new Documento(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ACTIVO, FECHA_CREACION);
 		assertEquals(EJEMPLO, ejemplo1);
 	}
 	

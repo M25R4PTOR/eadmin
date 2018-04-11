@@ -15,7 +15,7 @@ public class DocumentoPropuestaTest {
 	private static final Integer CODIGO_PROPUESTA = 1;
 	private static final Integer EJERCICIO = 1;
 	private static final String GRUPO_POLITICO = "Pa la saca";
-	private static final DocumentoPropuesta EJEMPLO = new DocumentoPropuesta(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ACTIVO, CODIGO_PROPUESTA, EJERCICIO, GRUPO_POLITICO);
+	private static final DocumentoPropuesta EJEMPLO = new DocumentoPropuesta(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ACTIVO, CODIGO_PROPUESTA, EJERCICIO, GRUPO_POLITICO, FECHA_CREACION);
 
 	@Test
 	public void testGetters() {
@@ -26,7 +26,7 @@ public class DocumentoPropuestaTest {
 	
 	@Test 
 	public void testEquals() {
-		DocumentoPropuesta ejemplo1 = new DocumentoPropuesta(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ACTIVO, CODIGO_PROPUESTA, EJERCICIO, GRUPO_POLITICO);
+		DocumentoPropuesta ejemplo1 = new DocumentoPropuesta(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ACTIVO, CODIGO_PROPUESTA, EJERCICIO, GRUPO_POLITICO, FECHA_CREACION);
 		assertEquals(EJEMPLO, ejemplo1);
 	}
 }

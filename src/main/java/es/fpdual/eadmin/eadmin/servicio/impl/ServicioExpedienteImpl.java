@@ -33,7 +33,7 @@ public class ServicioExpedienteImpl implements ServicioExpediente {
 	}
 
 	private Expediente obtenerExpedienteConFechaCorrecta(Expediente expediente) {
-		return new Expediente(expediente.getCodigo(), expediente.getNombre(), dameFechaActual(), expediente.getFechaArchivado(), expediente.getPublico(), expediente.getEstado(), expediente.getDocumentos());
+		return new Expediente(expediente.getCodigo(), expediente.getNombre(), dameFechaActual(), expediente.getFechaArchivado(), expediente.getPublico(), expediente.getEstado(), expediente.getDocumentos(), dameFechaActual());
 	}
 	
 	protected Date dameFechaActual() {

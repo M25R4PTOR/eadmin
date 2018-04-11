@@ -8,13 +8,15 @@ public abstract class BaseAdministracion {
 	private final String nombre;
 	private final Date fechaCreacion;
 	private final Boolean publico;
+	private final Date fechaUltimaActualizacion;
 	
-	public BaseAdministracion(Integer codigo, String nombre, Date fechaCreacion, Boolean publico) {
+	public BaseAdministracion(Integer codigo, String nombre, Date fechaCreacion, Boolean publico, Date fechaUltimaActualizacion) {
 		super();
 		this.codigo = codigo;
 		this.nombre = nombre;
 		this.fechaCreacion = fechaCreacion;
 		this.publico = publico;
+		this.fechaUltimaActualizacion = fechaUltimaActualizacion;
 	}
 
 	public Integer getCodigo() {
@@ -31,6 +33,10 @@ public abstract class BaseAdministracion {
 
 	public Boolean getPublico() {
 		return publico;
+	}
+	
+	public Date getFechaUltimaActualizacion() {
+		return fechaUltimaActualizacion;
 	}
 	
 	@Override

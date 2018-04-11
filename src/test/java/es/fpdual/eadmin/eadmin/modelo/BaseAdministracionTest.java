@@ -12,7 +12,7 @@ public class BaseAdministracionTest {
 	private static final String NOMBRE = "Ejemplo";
 	private static final boolean PUBLICO = true;
 	private static final Integer CODIGO = 1;
-	private static final BaseAdministracionFake EJEMPLO = new BaseAdministracionFake(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO); 
+	private static final BaseAdministracionFake EJEMPLO = new BaseAdministracionFake(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, FECHA_CREACION); 
 	
 	@Test
 	public void testGetters() {
@@ -24,12 +24,12 @@ public class BaseAdministracionTest {
 	
 	@Test 
 	public void testEquals() {
-		BaseAdministracionFake ejemplo1 = new BaseAdministracionFake(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO);
+		BaseAdministracionFake ejemplo1 = new BaseAdministracionFake(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, FECHA_CREACION);
 		assertEquals(EJEMPLO, ejemplo1);
 	}
 }
 class BaseAdministracionFake extends BaseAdministracion{	
-	public BaseAdministracionFake(Integer codigo, String nombre, Date fechaCreacion, Boolean publico) {
-		super(codigo, nombre, fechaCreacion, publico);
+	public BaseAdministracionFake(Integer codigo, String nombre, Date fechaCreacion, Boolean publico, Date fechaUltimaActualizacion) {
+		super(codigo, nombre, fechaCreacion, publico, fechaUltimaActualizacion);
 	}
 }
