@@ -20,4 +20,25 @@
 			#{documento.fechaUltimaActualizacion}, 
 			1)
 	</insert>
+	
+	<delete id="eliminarDocumento">
+		DELETE FROM ELEMENTO WHERE codigo = #{codigo};
+	</delete>
+	
+	
+	<update id="actualizarDocumento">
+		UPDATE ELEMENTO
+		SET codigo = #{documento.codigo},
+			nombre = #{documento.nombre},
+			fechaCreacion = #{documento.fechaCreacion},
+			esPublico = #{documento.publico},
+			estadoDocumento = #{documento.estado.codigo}, 
+			fechaUltimaActualizacion = #{documento.fechaUltimaActualizacion}, 
+			tipo = 1 
+		WHERE codigo = #{documento.codigo};
+	</update>
+	
+	<select id="consultarDocumento" resultMap=>
+		SELECT * FROM ELEMENTO WHERE codigo = #{codigo};
+	</select>
 </mapper>
