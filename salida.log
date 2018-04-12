@@ -1,86 +1,11 @@
-2018-04-11 13:06:31 INFO  EadminApplication:652 - No active profile set, falling back to default profiles: default
-2018-04-11 13:06:31 INFO  AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6293abcc: startup date [Wed Apr 11 13:06:31 CEST 2018]; root of context hierarchy
-2018-04-11 13:06:32 WARN  ClassPathMapperScanner:166 - No MyBatis mapper was found in '[es.fpdual.eadmin.eadmin]' package. Please check your configuration.
-2018-04-11 13:06:32 INFO  TomcatWebServer:91 - Tomcat initialized with port(s): 8080 (http)
-2018-04-11 13:06:32 INFO  ContextLoader:285 - Root WebApplicationContext: initialization completed in 1674 ms
-2018-04-11 13:06:33 INFO  ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
-2018-04-11 13:06:33 INFO  FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-04-11 13:06:33 INFO  FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-04-11 13:06:33 INFO  FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-04-11 13:06:33 INFO  FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
-2018-04-11 13:06:33 WARN  AnnotationConfigServletWebServerApplicationContext:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
-2018-04-11 13:06:33 INFO  ConditionEvaluationReportLoggingListener:101 - 
+2018-04-12 08:42:09 INFO  FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-12 08:42:09 INFO  FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-12 08:42:09 INFO  FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-12 08:42:10 WARN  AnnotationConfigServletWebServerApplicationContext:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2018-04-12 08:42:10 INFO  ConditionEvaluationReportLoggingListener:101 - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2018-04-11 13:06:33 ERROR LoggingFailureAnalysisReporter:42 - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to auto-configure a DataSource: 'spring.datasource.url' is not specified and no embedded datasource could be auto-configured.
-
-Reason: Failed to determine a suitable driver class
-
-
-Action:
-
-Consider the following:
-	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
-	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
-
-2018-04-11 13:33:15 INFO  EadminApplication:50 - Starting EadminApplication on mvformacion with PID 3440 (C:\Users\formacion\Desktop\Java\eadmin-master\target\classes started by formacion in C:\Users\formacion\Desktop\Java\eadmin-master)
-2018-04-11 13:33:15 INFO  EadminApplication:652 - No active profile set, falling back to default profiles: default
-2018-04-11 13:33:15 INFO  AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fc2413d: startup date [Wed Apr 11 13:33:15 CEST 2018]; root of context hierarchy
-2018-04-11 13:33:16 WARN  ClassPathMapperScanner:166 - No MyBatis mapper was found in '[es.fpdual.eadmin.eadmin]' package. Please check your configuration.
-2018-04-11 13:33:17 INFO  TomcatWebServer:91 - Tomcat initialized with port(s): 8080 (http)
-2018-04-11 13:33:17 INFO  ContextLoader:285 - Root WebApplicationContext: initialization completed in 1693 ms
-2018-04-11 13:33:17 INFO  ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
-2018-04-11 13:33:17 INFO  FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-04-11 13:33:17 INFO  FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-04-11 13:33:17 INFO  FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-04-11 13:33:17 INFO  FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
-2018-04-11 13:33:17 WARN  AnnotationConfigServletWebServerApplicationContext:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
-2018-04-11 13:33:17 INFO  ConditionEvaluationReportLoggingListener:101 - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2018-04-11 13:33:17 ERROR LoggingFailureAnalysisReporter:42 - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to auto-configure a DataSource: 'spring.datasource.url' is not specified and no embedded datasource could be auto-configured.
-
-Reason: Failed to determine a suitable driver class
-
-
-Action:
-
-Consider the following:
-	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
-	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
-
-2018-04-11 13:33:42 INFO  EadminApplication:50 - Starting EadminApplication on mvformacion with PID 10708 (C:\Users\formacion\Desktop\Java\eadmin-master\target\classes started by formacion in C:\Users\formacion\Desktop\Java\eadmin-master)
-2018-04-11 13:33:42 INFO  EadminApplication:652 - No active profile set, falling back to default profiles: default
-2018-04-11 13:33:42 INFO  AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b44655e: startup date [Wed Apr 11 13:33:42 CEST 2018]; root of context hierarchy
-2018-04-11 13:33:43 WARN  ClassPathMapperScanner:166 - No MyBatis mapper was found in '[es.fpdual.eadmin.eadmin]' package. Please check your configuration.
-2018-04-11 13:33:44 INFO  TomcatWebServer:91 - Tomcat initialized with port(s): 8080 (http)
-2018-04-11 13:33:44 INFO  ContextLoader:285 - Root WebApplicationContext: initialization completed in 1670 ms
-2018-04-11 13:33:44 INFO  ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
-2018-04-11 13:33:44 INFO  FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-04-11 13:33:44 INFO  FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-04-11 13:33:44 INFO  FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-04-11 13:33:44 INFO  FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
-2018-04-11 13:33:44 WARN  AnnotationConfigServletWebServerApplicationContext:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
-2018-04-11 13:33:44 INFO  ConditionEvaluationReportLoggingListener:101 - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2018-04-11 13:33:44 ERROR LoggingFailureAnalysisReporter:42 - 
+2018-04-12 08:42:10 ERROR LoggingFailureAnalysisReporter:42 - 
 
 ***************************
 APPLICATION FAILED TO START
