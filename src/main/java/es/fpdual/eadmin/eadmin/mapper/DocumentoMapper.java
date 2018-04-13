@@ -12,5 +12,5 @@ public interface DocumentoMapper {
 	
 	int actualizarDocumento(@Param("documento")Documento documento);
 	
-	Documento consultarDocumento(@Param("codigo")Integer codigo);
+	Documento consultarDocumento(@Param("codigo")int codigo);
 }

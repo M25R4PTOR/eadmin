@@ -61,9 +61,10 @@ public abstract class BaseDocumentoMapperTest {
 	
 	@Test
 	public void deberiaDevolverDocumentos() throws Exception {
-		mapper.insertarDocumento(documento);
+		this.mapper.insertarDocumento(documento);
 		
 		final Documento resultado = this.mapper.consultarDocumento(1);
-		assertEquals(resultado, documento);
+		
+		assertThat(resultado, is(this.documento));
 	}
 }

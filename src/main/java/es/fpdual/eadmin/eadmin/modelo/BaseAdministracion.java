@@ -2,6 +2,9 @@ package es.fpdual.eadmin.eadmin.modelo;
 
 import java.util.Date;
 
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+
 public abstract class BaseAdministracion {
 
 	private final Integer codigo;
@@ -41,14 +44,30 @@ public abstract class BaseAdministracion {
 	
 	@Override
 	public int hashCode() {
-		return codigo.hashCode() + nombre.hashCode() + fechaCreacion.hashCode() + publico.hashCode();
+		final HashCodeBuilder hashCodeBuilder = new HashCodeBuilder();
+		
+		hashCodeBuilder.append(codigo);
+		hashCodeBuilder.append(nombre);
+		hashCodeBuilder.append(fechaCreacion);
+		hashCodeBuilder.append(publico);
+		hashCodeBuilder.append(fechaUltimaActualizacion);
+		
+		return hashCodeBuilder.toHashCode();
 	}
 
 	@Override
 	public boolean equals(Object obj) {
 		if (obj instanceof BaseAdministracion) {
-			return codigo.equals(((BaseAdministracion) obj).getCodigo()) && nombre.equals(((BaseAdministracion) obj).getNombre()) 
-					&& fechaCreacion.equals(((BaseAdministracion) obj).getFechaCreacion()) && publico.equals(((BaseAdministracion) obj).getPublico());
+			final BaseAdministracion param = (BaseAdministracion)obj;
+			final EqualsBuilder equalsBuilder = new EqualsBuilder();
+			
+			equalsBuilder.append(this.codigo, param.codigo);
+			equalsBuilder.append(this.nombre, param.nombre);
+			equalsBuilder.append(this.fechaCreacion, param.fechaCreacion);
+			equalsBuilder.append(this.publico, param.publico);
+			equalsBuilder.append(this.fechaUltimaActualizacion, param.fechaUltimaActualizacion);
+			
+			return equalsBuilder.isEquals();
 		}
 		return false;
 	}

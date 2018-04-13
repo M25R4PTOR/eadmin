@@ -38,7 +38,26 @@
 		WHERE codigo = #{documento.codigo};
 	</update>
 	
-	<select id="consultarDocumento" resultMap=>
-		SELECT * FROM ELEMENTO WHERE codigo = #{codigo};
+	<select id="consultarDocumento" resultMap="documentoResultMap">
+		SELECT codigo,
+			nombre,
+			fechaCreacion,
+			fechaUltimaActualizacion,
+			esPublico,
+			estadoDocumento
+		FROM ELEMENTO 
+		WHERE codigo = #{codigo};
 	</select>
+	
+	<resultMap type="es.fpdual.eadmin.eadmin.modelo.Documento" id="documentoResultMap">
+		<constructor>
+			<idArg column="codigo" javaType="Integer"/>
+			<arg column="nombre" javaType="String"/>
+			<arg column="fechaCreacion" javaType="Date"/>
+			<arg column="esPublico" javaType="Boolean"/>
+			<arg column="estadoDocumento" javaType="Integer"/>
+			<arg column="fechaUltimaActualizacion" javaType="Date"/>
+		</constructor>
+	</resultMap>
+	
 </mapper>
