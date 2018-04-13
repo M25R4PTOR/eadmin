@@ -16,8 +16,8 @@ public class Documento extends BaseAdministracion{
 		this.estado = estado;
 	}
 	
-	public Documento(Integer codigo, String nombre, Date fechaCreacion, Boolean publico, Integer estado, Date fechaUltimaActualizacion) {
-		super(codigo, nombre, fechaCreacion, publico, fechaUltimaActualizacion);
+//	public Documento(Integer codigo, String nombre, Date fechaCreacion, Boolean publico, Integer estado, Date fechaUltimaActualizacion) {
+//		super(codigo, nombre, fechaCreacion, publico, fechaUltimaActualizacion);
 //		switch (estado) {
 //		case 1:
 //			this.estado = EstadoDocumento.ACTIVO;
@@ -33,8 +33,8 @@ public class Documento extends BaseAdministracion{
 //			this.estado = null;
 //			break;
 //		} //Igual que la siguiente linea de codigo
-		this.estado = Optional.ofNullable(estado).map(EstadoDocumento::obtenerPorCodigo).orElse(null);
-	}
+//		this.estado = Optional.ofNullable(estado).map(EstadoDocumento::obtenerPorCodigo).orElse(null);
+//	}
 
 	public EstadoDocumento getEstado() {
 		return estado;

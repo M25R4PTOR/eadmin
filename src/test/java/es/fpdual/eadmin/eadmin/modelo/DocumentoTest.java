@@ -18,7 +18,7 @@ public class DocumentoTest extends AbstractoModeloBeanTest<Documento> {
 	@Override
 	public void before() {
 		this.entityA1 = new Documento(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ACTIVO, FECHA_CREACION);
-		this.entityA2 = new Documento(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, 1, FECHA_CREACION);
+		this.entityA2 = new Documento(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ACTIVO, FECHA_CREACION);
 		this.entityB = new Documento(CODIGO, NOMBRE, FECHA_CREACION, PUBLICO, EstadoDocumento.ELIMINADO, FECHA_CREACION);
 	}
 
