@@ -4,9 +4,6 @@ import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 
 import java.time.LocalDate;
-import java.time.ZoneId;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import org.junit.Before;
@@ -66,5 +63,18 @@ public abstract class BaseDocumentoMapperTest {
 		final Documento resultado = this.mapper.consultarDocumento(1);
 		
 		assertThat(resultado, is(this.documento));
+	}
+	
+	@Test
+	public void deberiaDevolverTodosLosDocumentos() throws Exception {
+		final Documento documento2 = new Documento(2, "Ejemplo Modificado", Utilidades.asDate(LocalDate.of(2015, 2, 1)), true, EstadoDocumento.ACTIVO, Utilidades.asDate(LocalDate.of(2015, 2, 2)));
+
+		this.mapper.insertarDocumento(documento2);
+		this.mapper.insertarDocumento(documento);
+		
+		final List<Documento> resultado = this.mapper.consultarTodosLosDocumentos();
+		
+		assertThat(resultado, hasSize(2));
+		assertThat(resultado, hasItems(this.documento, documento2));
 	}
 }

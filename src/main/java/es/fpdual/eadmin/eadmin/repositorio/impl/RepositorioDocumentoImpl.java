@@ -67,7 +67,10 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 
 	@Override
 	public void modificarDocumento(Documento documento) {
-		this.mapper.actualizarDocumento(documento);
+		int modificado = this.mapper.actualizarDocumento(documento);
+		if(modificado == 0) {
+			throw new IllegalArgumentException("No se encuentra el documento");
+		}
 //		LOGGER.info("Entrando en el método \"modificarDocumento\"");
 //		if (!documentos.contains(documento)) {
 //			throw new IllegalArgumentException("El documento no existe");
@@ -142,13 +145,14 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 
 	@Override
 	public List<Documento> obtenerTodosLosDocumentos() {
-		LOGGER.info("Entrando en el método \"obtenerTodosLosDocumentos\"");
-		for (Documento d : getDocumentos()) {
-			LOGGER.info("Código: " + d.getCodigo() + ", Nombre: " + d.getNombre() + ", Fecha Creación: "
-					+ d.getFechaCreacion() + ", Público: " + d.getPublico() + " y Estado Documento: " + d.getEstado());
-		}
-		LOGGER.info("Saliendo del método \"obtenerTodosLosDocumentos\"");
-		return this.getDocumentos();
+		return this.mapper.consultarTodosLosDocumentos();
+//		LOGGER.info("Entrando en el método \"obtenerTodosLosDocumentos\"");
+//		for (Documento d : getDocumentos()) {
+//			LOGGER.info("Código: " + d.getCodigo() + ", Nombre: " + d.getNombre() + ", Fecha Creación: "
+//					+ d.getFechaCreacion() + ", Público: " + d.getPublico() + " y Estado Documento: " + d.getEstado());
+//		}
+//		LOGGER.info("Saliendo del método \"obtenerTodosLosDocumentos\"");
+//		return this.getDocumentos();
 	}
 
 	public static void guardarDocumentosEnFichero(List<Documento> documentos, String nombreFichero) {

@@ -39,15 +39,23 @@
 	</update>
 	
 	<select id="consultarDocumento" resultMap="documentoResultMap">
+		<include refid ="baseSelectDocumento"/> AND codigo = #{codigo};
+	</select>
+	
+	<select id="consultarTodosLosDocumentos" resultMap="documentoResultMap">
+		<include refid ="baseSelectDocumento"/>
+	</select>
+	
+	<sql id="baseSelectDocumento">
 		SELECT codigo,
 			nombre,
 			fechaCreacion,
 			fechaUltimaActualizacion,
 			esPublico,
 			estadoDocumento
-		FROM ELEMENTO 
-		WHERE codigo = #{codigo};
-	</select>
+		FROM ELEMENTO
+		WHERE tipo = 1
+	</sql>
 	
 	<resultMap type="es.fpdual.eadmin.eadmin.modelo.Documento" id="documentoResultMap">
 		<constructor>
