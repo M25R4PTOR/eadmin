@@ -57,6 +57,12 @@
 		WHERE tipo = 1
 	</sql>
 	
+	<select id="codigoMaximo" resultType="Integer">
+		SELECT ISNULL(MAX(codigo), 0)+1
+		FROM ELEMENTO
+		WHERE tipo = 1
+	</select>
+	
 	<resultMap type="es.fpdual.eadmin.eadmin.modelo.Documento" id="documentoResultMap">
 		<constructor>
 			<idArg column="codigo" javaType="Integer"/>

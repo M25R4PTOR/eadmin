@@ -17,4 +17,6 @@ public interface DocumentoMapper {
 	Documento consultarDocumento(@Param("codigo")int codigo);
 	
 	List<Documento> consultarTodosLosDocumentos();
+	
+	int codigoMaximo();
 }

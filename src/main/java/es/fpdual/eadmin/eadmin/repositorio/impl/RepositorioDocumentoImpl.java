@@ -25,6 +25,7 @@ import org.slf4j.Logger;
 
 import es.fpdual.eadmin.eadmin.mapper.DocumentoMapper;
 import es.fpdual.eadmin.eadmin.modelo.Documento;
+import es.fpdual.eadmin.eadmin.modelo.builder.DocumentoBuilder;
 import es.fpdual.eadmin.eadmin.repositorio.RepositorioDocumento;
 
 @Repository
@@ -47,7 +48,9 @@ public class RepositorioDocumentoImpl implements RepositorioDocumento {
 
 	@Override
 	public void altaDocumento(Documento documento) {
-		this.mapper.insertarDocumento(documento);
+		Integer codigoMaximo = this.mapper.codigoMaximo();
+		DocumentoBuilder resultado = new DocumentoBuilder().clonar(documento).conCodigo(codigoMaximo);
+		this.mapper.insertarDocumento(resultado.construir());
 //		LOGGER.info("Entrando en el método \"altaDocumento\"");
 //		if (documentos.contains(documento)) {
 //			throw new IllegalArgumentException("El documento ya existe");
